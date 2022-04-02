@@ -1,0 +1,30 @@
+{
+  "blocklyFilesUrls":[
+    "../assets/blocklyFiles/blocks/23emulator_b.js",
+    "../assets/blocklyFiles/generators/23emulator_g.js"
+  ],
+  "category":{
+    "kind": "category",
+    "name": "仿真",
+    "colour": "ffebcd",
+    "icon":"./小车控制.png",
+    "contents": [
+      {
+        "kind": "label",
+        "text": "仿真（编程块放程序开头！）"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='emulator_init'></block>"
+      },
+      {
+        "kind": "label",
+        "text": "设置仿真摄像头"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='emulator_camera'><value name='cam_name'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='cam_num'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+      }
+    ]
+  }
+}

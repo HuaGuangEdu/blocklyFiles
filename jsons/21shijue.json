@@ -1,0 +1,168 @@
+{
+  "blocklyFilesUrls": [
+    "../assets/blocklyFiles/blocks/21shijue_b.js",
+    "../assets/blocklyFiles/generators/21shijue_g.js"
+  ],
+  "category": {
+    "kind":"category",
+    "name":"视觉",
+    "colour": "fad2e1",
+    "icon":"./视觉.png",
+    "contents": [
+      {
+        "kind": "label",
+        "text": "摄像头基本操作"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='camera'><value name='cam_name'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='cam_num'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='camera_close'><value name='cam_name_1'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+
+      {
+        "kind": "block",
+        "blockxml": "<block type='camera_get'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_flip'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='write_image'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='path'><block type='text'><field name='TEXT'></field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='camera_get_path'><value name='img_f'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='img_path'><block type='text'><field name='TEXT'></field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='Type'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_res'><value name='img_r'><block type='variables_get'><field name='VAR'>img</field></block></value><value name='res_w'><block type='math_number'><field name='NUM'>0</field></block></value><value name='res_h'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='BGR2GRAY'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='GRAY2BIN'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_hsv_erode'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+	  {
+		"kind": "block",
+		"blockxml": "<block type='qDDiBe'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "label",
+        "text": "窗口操作"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_windows'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name'><block type='text'><field name='TEXT'>img</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_windows_show'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name_s'><block type='text'><field name='TEXT'>img</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='img_windows_delay'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name_d'><block type='math_number'><field name='NUM'>1</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='close_windows'><value name='a'><block type='variables_get'><field name='VAR'>img</field></block></value></block>"
+      },
+
+      {
+        "kind": "label",
+        "text": "其他操作"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='model_recognize_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='model_name'><block type='text'><field name='TEXT'>lxy1007.proto</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='model_recognize'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='model_data'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='change_ID'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='name'><block type='text'><field name='TEXT'>Jack</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='get_data'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='ms'><block type='math_number'><field name='NUM'>10</field></block></value><value name='photo_num'><block type='math_number'><field name='NUM'>50</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='train'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='detector'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='detector_begin'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='detector_result'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='QR_Code_begin'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='QR_Code_result'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='beauty_face'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='finger_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='finger_distance'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='body_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='body_part_x'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='body_part_y'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='body_part_distance'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      }, 
+      {
+        "kind": "block",
+        "blockxml": "<block type='get_shape'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+      }
+    ]
+  }
+}

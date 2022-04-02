@@ -1,0 +1,9 @@
+{
+  "category": {
+    "kind":"category",
+    "name":"变量",
+    "colour": "bdb2ff",
+    "icon":"./变量.png",
+    "custom":"VARIABLE"
+  }
+}
