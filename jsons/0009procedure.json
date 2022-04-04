@@ -1,0 +1,13 @@
+{
+	"blocklyFilesUrls":[
+      "../assets/blocklyFiles/blocks/0009procedure_b.js",
+      "../assets/blocklyFiles/generators/0009procedure_g.js"
+    ],
+  "category": {
+    "kind":"category",
+    "name":"函数",
+    "colour": "ffc6ff",
+    "icon":"./函数.png",
+    "custom":"PROCEDURE"
+  }
+}

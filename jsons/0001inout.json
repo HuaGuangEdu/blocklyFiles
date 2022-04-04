@@ -1,0 +1,30 @@
+{
+  "blocklyFilesUrls":[
+    "../assets/blocklyFiles/blocks/0001inout_b.js",
+    "../assets/blocklyFiles/generators/0001inout_g.js"
+  ],
+  "category":{
+    "kind": "category",
+    "name": "输入/输出",
+    "colour": "ffadad",
+    "icon":"./输入输出.png",
+    "contents": [
+      {
+        "kind": "block",
+        "blockxml": "<block type='inout_type_input'><value name='VAR'><shadow type='text'><field name='TEXT'>请输入：</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='inout_print'><value name='VAR'><shadow type='text'><field name='TEXT'>Hello</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='inout_print_inline'><value name='VAR'><shadow type='text'><field name='TEXT'>Hello</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='inout_print_end'><value name='VAR'><shadow type='text'><field name='TEXT'>Hello</field></shadow></value><value name='END'><shadow type='text'><field name='TEXT'>,</field></shadow></value></block>"
+      }
+    ]
+  }
+}

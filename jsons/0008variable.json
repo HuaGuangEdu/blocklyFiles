@@ -1,0 +1,13 @@
+{
+"blocklyFilesUrls":[
+      "../assets/blocklyFiles/blocks/0008variable_b.js",
+      "../assets/blocklyFiles/generators/0008variable_g.js"
+    ],
+  "category": {
+    "kind":"category",
+    "name":"变量",
+    "colour": "bdb2ff",
+    "icon":"./变量.png",
+    "custom":"VARIABLE"
+  }
+}

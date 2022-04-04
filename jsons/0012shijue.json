@@ -1,0 +1,342 @@
+{
+    "blocklyFilesUrls": [
+        "../assets/blocklyFiles/blocks/0012shijue_b.js",
+        "../assets/blocklyFiles/generators/0012shijue_g.js"
+    ],
+    "category": {
+        "kind": "category",
+        "name": "视觉图像",
+        "colour": "9BF6FF",
+        "icon": "./视觉.png",
+        "contents": [
+            {
+                "kind": "category",
+                "name": "基本操作",
+                "colour": "9BF6FF",
+                "icon": "./基本操作.png",
+                "contents": [
+                    {
+                        "kind": "label",
+                        "text": "摄像头基本操作"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='camera'><value name='cam_name'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='cam_num'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='camera_close'><value name='cam_name_1'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='camera_get'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "读取和保存单张图片"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='write_image'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='path'><block type='text'><field name='TEXT'></field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='camera_get_path'><value name='img_f'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='img_path'><block type='text'><field name='TEXT'></field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "图像基本操作"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='Type'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='img_res'><value name='img_r'><block type='variables_get'><field name='VAR'>img</field></block></value><value name='res_w'><block type='math_number'><field name='NUM'>0</field></block></value><value name='res_h'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='dI_sLk'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='BGR2GRAY'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='GRAY2BIN'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='img_hsv_erode'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='qDDiBe'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='beauty_face'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='get_shape'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    }
+                ]
+            },
+            {
+                "kind": "category",
+                "name": "图像显示",
+                "colour": "9BF6FF",
+                "icon": "./图像显示.png",
+                "contents": [
+                    {
+                        "kind": "label",
+                        "text": "窗口操作"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='img_windows'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name'><block type='text'><field name='TEXT'>img</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='img_windows_show'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name_s'><block type='text'><field name='TEXT'>img</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='close_windows'><value name='a'><block type='variables_get'><field name='VAR'>img</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "设置图像刷新速度（显示图像必备的块）"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='img_windows_delay'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='w_name_d'><block type='math_number'><field name='NUM'>1</field></block></value></block>"
+                    }
+                ]
+            },
+            {
+                "kind": "category",
+                "name": "图像识别",
+                "colour": "9BF6FF",
+                "icon": "./图像识别.png",
+                "contents": [
+                    {
+                        "kind": "label",
+                        "text": "数字识别"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='model_recognize_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='model_name'><block type='text'><field name='TEXT'>numbers.onnx</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='model_recognize'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='model_data'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "训练人脸模型与人脸识别（识别这个人是谁，但不会把这个人框出来）"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='change_ID'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='name'><block type='text'><field name='TEXT'>Jack</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='get_data'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='ms'><block type='math_number'><field name='NUM'>10</field></block></value><value name='photo_num'><block type='math_number'><field name='NUM'>50</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='train'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='MgGyws'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='STR1'><block type='text'><field name='TEXT'>Jack</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='Rkvtnk'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "人脸检测（检测是否有人并把人框出来，无法分辨那个人是谁）"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='JULPwO'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='TFpGo_'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='UWCuPc'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "颜色检测和识别操作"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='detector'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='detector_begin'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='detector_result'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "手指检测"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='finger_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='iiZx_B'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='finger_distance'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "身体部位检测"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='body_init'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='wrist_mark'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='body_part_distance'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='QewIlI'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "形状检测和识别操作"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='nQLZEX'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='Uggrib'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='UmOSBk'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='_hzkiF'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='qemBSP'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='EFFxHX'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='wyIxPg'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='QNYiXc'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "二维码识别"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='QR_Code_begin'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='QR_Code_result'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "图像背景切换"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='bOmQLt'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='EAHsF_'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='STR1'><block type='text'><field name='TEXT'>1.png</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "脸部特征点检测"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='_fUgLI'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='XvJcpG'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "模板匹配"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='AGVzJy'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='hdhyBZ'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='STR1'><block type='text'><field name='TEXT'>template.jpg</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='XjyuJQ'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='YONlOm'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='dYJgsS'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='omjURX'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+           	 {
+               	 "kind": "block",
+               	 "blockxml": "<block type='OCGUTW'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+           	 }
+                ]
+            }
+        ]
+    }
+}
