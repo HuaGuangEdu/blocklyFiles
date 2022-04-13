@@ -1,9 +1,0 @@
-{
-  "category": {
-    "kind":"category",
-    "name":"函数",
-    "colour": "ffc6ff",
-    "icon":"./函数.png",
-    "custom":"PROCEDURE"
-  }
-}

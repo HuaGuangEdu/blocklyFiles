@@ -141,7 +141,7 @@
                 "kind": "category",
                 "name": "模型操作",
                 "colour": "CCFF99",
-                "icon": "./模型操作.png",
+                "icon": "./机器学习.png",
                 "contents": [
                     {
                         "kind": "label",
