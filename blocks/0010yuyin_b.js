@@ -300,4 +300,15 @@ Blockly.Blocks.change_setting_DUI={
     this.setNextStatement(true, null);
   }
 };
+Blockly.Blocks["qMZmUE"]={
+  init: function () {
+  this.setColour(180);
+  this.appendValueInput('s').setCheck('var');
+  this.appendDummyInput().appendField('识别到语音文件');
+  this.appendValueInput('speech').setCheck('var');
+  this.appendDummyInput().appendField('中的数字');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};
 
