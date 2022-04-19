@@ -46,10 +46,14 @@
         "kind":"block",
         "blockxml":"<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
       },
-			{
-				"kind":"block",
-				"blockxml":"<block type='change_setting_DUI'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
-			}
+	{
+		"kind":"block",
+		"blockxml":"<block type='change_setting_DUI'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
+	},
+    {
+	"kind": "block",
+	"blockxml": "<block type='qMZmUE'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='speech'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
+    }
     ]
   }
 }
