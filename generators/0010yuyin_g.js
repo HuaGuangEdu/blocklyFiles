@@ -129,4 +129,9 @@ Blockly.Python.change_setting_DUI= function () {
     var code = s+'.change_vol_spd_gender_DUI('+vol+', '+spd+', "'+gender+'")\n';
     return code;
 };
-
+Blockly.Python["qMZmUE"]= function () {
+  Blockly.Python.definitions_['control_yuyin']='from control import yuyin';
+ var s=Blockly.Python.valueToCode(this,'s',Blockly.Python.ORDER_ATOMIC);
+  var code=s+'.recordNumberList'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
