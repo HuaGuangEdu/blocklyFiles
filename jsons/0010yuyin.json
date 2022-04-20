@@ -40,10 +40,6 @@
       },
       {
         "kind":"block",
-        "blockxml":"<block type='change_vol_spd_gender'></block>"
-      },
-      {
-        "kind":"block",
         "blockxml":"<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
       },
 	{
