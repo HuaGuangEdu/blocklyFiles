@@ -101,15 +101,6 @@ Blockly.Python.hardware_raspberrypi_robot_word= function () {
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.change_vol_spd_gender= function () {
-    Blockly.Python.definitions_['control'] = 'from control import yuyin';
-    var vol = this.getFieldValue('DIR1');
-    var spd = this.getFieldValue('DIR2');
-    var gender = this.getFieldValue('DIR3');
-    var code = 's.change_vol_spd_gender('+vol+','+spd+',"'+gender+'")\n';
-    return code;
-};
-
 
 Blockly.Python.plat_txt= function () {
     Blockly.Python.definitions_['control'] = 'from control import yuyin';
