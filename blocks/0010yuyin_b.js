@@ -1,4 +1,4 @@
-'use strict';
+hou'use strict';
 
 //colour = 180;
 
@@ -206,44 +206,6 @@ Blockly.Blocks.hardware_raspberrypi_robot_word={
       .appendField('对你说的话');
     this.setInputsInline(true);
     this.setOutput(true);
-  }
-};
-
-
-//图元change_vol_spd_gender
-Blockly.Blocks.change_vol_spd_gender={
-  init: function () {
-    this.setColour(180);
-    this.appendDummyInput()
-        .appendField('设置播放音频的音量为');
-    var vol =
-        [
-          ["1", '1'], ["2", '2'], ["3", '3'], ["4", '4'], ["5", '5']
-        ];
-    var spd =
-        [
-          ["1", '1'], ["2", '2'], ["3", '3'], ["4", '4'], ["5", '5']
-        ];
-    var gender =
-        [
-          ["少年音播放", 'young man'],
-          ["可爱萝莉播放", 'young woman'],
-          ["男青年音播放", 'adult man'], 
-          ["少女音播放", 'adult woman']
-        ];
-    this.appendDummyInput("")
-        .appendField(new Blockly.FieldDropdown(vol), 'DIR1')
-    this.appendDummyInput()
-        .appendField('，语速为');
-    this.appendDummyInput("")
-        .appendField(new Blockly.FieldDropdown(spd), 'DIR2')
-    this.appendDummyInput()
-        .appendField('，是');
-    this.appendDummyInput("")
-        .appendField(new Blockly.FieldDropdown(gender), 'DIR3')
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
   }
 };
 
