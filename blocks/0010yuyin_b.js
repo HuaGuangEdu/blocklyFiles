@@ -1,4 +1,4 @@
-hou'use strict';
+'use strict';
 
 //colour = 180;
 
@@ -210,6 +210,7 @@ Blockly.Blocks.hardware_raspberrypi_robot_word={
 };
 
 
+
 //图元plat_txt
 Blockly.Blocks.plat_txt={
   init: function () {
@@ -262,15 +263,5 @@ Blockly.Blocks.change_setting_DUI={
     this.setNextStatement(true, null);
   }
 };
-Blockly.Blocks["qMZmUE"]={
-  init: function () {
-  this.setColour(180);
-  this.appendValueInput('s').setCheck('var');
-  this.appendDummyInput().appendField('识别到语音文件');
-  this.appendValueInput('speech').setCheck('var');
-  this.appendDummyInput().appendField('中的数字');
-  this.setInputsInline(true);
-  this.setOutput(true);
-  },  
-};
+
 
