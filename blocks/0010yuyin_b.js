@@ -29,9 +29,9 @@ Blockly.Blocks.hardware_raspberrypi_yuyin_s = {
       .setCheck('var');
    this.appendDummyInput()
         .appendField("为");
-   var mode = [["在线", "True"], ["本地", "False"]]
-   this.appendDummyInput("")
-            .appendField(new Blockly.FieldDropdown(mode), 'DIR')
+//   var mode = [["在线", "True"], ["本地", "False"]]
+//   this.appendDummyInput("")
+//            .appendField(new Blockly.FieldDropdown(mode), 'DIR')
    this.appendDummyInput()
         .appendField("语音交互器");
     this.setInputsInline(true);
