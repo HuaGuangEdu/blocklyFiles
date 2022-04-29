@@ -14,7 +14,8 @@ Blockly.Python.hardware_raspberrypi_yuyin_s= function () {
     Blockly.Python.definitions_['control'] = 'from control import yuyin';
     var s =Blockly.Python.valueToCode(this, 's', Blockly.Python.ORDER_ATOMIC);
     var mode = this.getFieldValue('DIR');
-    var code =s+'=yuyin.Yuyin(online='+mode+')\n';
+//    var code =s+'=yuyin.Yuyin(online='+mode+')\n';
+    var code =s+'=yuyin.Yuyin()\n';
     return code;
 };
 
