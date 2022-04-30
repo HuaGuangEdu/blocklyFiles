@@ -13,8 +13,8 @@ Blockly.Blocks.hardware_raspberrypi_machine_learning_datasets = {
                 ["手写数字", 'digits'],
               ["鸢尾花", 'iris'],
               ["乳腺癌", 'breast_cancer'],
-              ["糖尿病", 'diabetes'],
-              ["房价", "boston"]
+              // ["糖尿病", 'diabetes'],
+              // ["房价", "boston"]
             ];
         this.appendDummyInput("")
             .appendField(new Blockly.FieldDropdown(dataset_name), 'dataset_name')
