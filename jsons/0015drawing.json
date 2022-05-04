@@ -1,0 +1,74 @@
+{
+    "blocklyFilesUrls": [
+        "../assets/blocklyFiles/blocks/0015drawing_b.js",
+        "../assets/blocklyFiles/generators/0015drawing_g.js"
+    ],
+    "category": {
+        "kind": "category",
+        "name": "画图",
+        "colour": "ffaa00",
+        "icon": "./新的.png",
+        "contents": [
+            {
+                "kind": "block",
+                "blockxml": "<block type='KwBunK'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM2'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='MUxSVu'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='HhbRej'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='fkFEQy'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='QSiFTf'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='QmjVrR'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM2'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='IBbgKe'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='haRyhR'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='fYdSWn'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='PTQFyJ'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='CjONFi'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='mKMKUW'><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='GCqkbF'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='aEZAqL'><value name='STR1'><block type='text'><field name='TEXT'></field></block></value><value name='NUM1'><block type='math_number'><field name='NUM'>12</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='EXEC'><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+            }
+        ]
+    }
+}
