@@ -40,7 +40,7 @@ Blockly.Python.hardware_raspberrypi_luyin= function () {
     var yuyin_s_luyin =Blockly.Python.valueToCode(this, 'yuyin_s_luyin', Blockly.Python.ORDER_ATOMIC);
     var luyin_time =Blockly.Python.valueToCode(this, 'luyin_time', Blockly.Python.ORDER_ATOMIC);
     var luyin_path =Blockly.Python.valueToCode(this, 'luyin_path', Blockly.Python.ORDER_ATOMIC);
-    var code = yuyin_s_luyin+'.my_record('+luyin_time +','+luyin_path +')\n';
+    var code = yuyin_s_luyin+'.my_record('+luyin_time +',"'+luyin_path +'")\n';
     return code;
 };
 
@@ -48,7 +48,7 @@ Blockly.Python.hardware_raspberrypi_yuyin_txt= function () {
     Blockly.Python.definitions_['control'] = 'from control import yuyin';
     var yuyin_s_stt =Blockly.Python.valueToCode(this, 'yuyin_s_stt', Blockly.Python.ORDER_ATOMIC);
     var txt =Blockly.Python.valueToCode(this, 'txt', Blockly.Python.ORDER_ATOMIC);
-    var code = yuyin_s_stt+'.stt('+txt+')';
+    var code = yuyin_s_stt+'.stt("'+txt+'")';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
@@ -57,7 +57,7 @@ Blockly.Python.hardware_raspberrypi_read_txt= function () {
      var yuyin_s_tts =Blockly.Python.valueToCode(this, 'yuyin_s_tts', Blockly.Python.ORDER_ATOMIC);
     var txt_4 =Blockly.Python.valueToCode(this, 'txt_4', Blockly.Python.ORDER_ATOMIC);
     var filename =Blockly.Python.valueToCode(this, 'filename', Blockly.Python.ORDER_ATOMIC);
-    var code = yuyin_s_tts+'.tts('+txt_4 +','+filename+')\n';
+    var code = yuyin_s_tts+'.tts('+txt_4 +',"'+filename+'")\n';
     return code;
 };
 
@@ -65,7 +65,7 @@ Blockly.Python.hardware_raspberrypi_read_txt_1= function () {
     Blockly.Python.definitions_['control'] = 'from control import yuyin';
     var yuyin_s_play =Blockly.Python.valueToCode(this, 'yuyin_s_play', Blockly.Python.ORDER_ATOMIC);
     var filename_1 =Blockly.Python.valueToCode(this, 'filename_1', Blockly.Python.ORDER_ATOMIC);
-    var code = yuyin_s_play+'.play_music(' +filename_1 + ')\n';
+    var code = yuyin_s_play+'.play_music("' +filename_1 + '")\n';
     return code;
 };
 /*
