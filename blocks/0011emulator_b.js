@@ -14,7 +14,8 @@ Blockly.Blocks.emulator_init = {
             ["超声波", '2'],
             ["简单运动", '3'],
             ["简单巡线", '4'],
-            ["智能家居", '5']
+            ["智能家居", '5'],
+            ["金沙湾", '6']
         ];
     this.appendDummyInput("")
         .appendField(new Blockly.FieldDropdown(level), 'DIR1')

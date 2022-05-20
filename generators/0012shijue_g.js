@@ -65,7 +65,7 @@ Blockly.Python.write_image = function () {
     'path',
     Blockly.Python.ORDER_ATOMIC
   );
-  var code = a + '.write_image(' + path + ')';
+  var code = a + '.write_image(' + path + ',__file__)\n';
   return code;
 };
 
@@ -82,7 +82,7 @@ Blockly.Python.camera_get_path = function () {
     'img_path',
     Blockly.Python.ORDER_ATOMIC
   );
-  var code = img_f + '=shijue1.Img()\n' + img_f + '.get_frame(' + img_path + ')\n';  //加入了实例化，直接一个块对应两行代码
+  var code = img_f + '=shijue1.Img()\n' + img_f + '.get_frame(' + img_path + ',__file__)\n';  //加入了实例化，直接一个块对应两行代码
   return code;
 };
 

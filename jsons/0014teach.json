@@ -154,7 +154,31 @@
                     {
                         "kind": "block",
                         "blockxml": "<block type='csb_distance'><value name='M'><block type='variables_get'><field name='VAR'>ul</field></block></value></block>"
-                    }
+                    },
+                    {
+                        "kind": "label",
+                        "text": "LCD屏幕"
+                    },
+                     {
+                        "kind": "block",
+                        "blockxml": "<block type='uUtesR'><value name='Lcd'><block type='variables_get'><field name='VAR'>Lcd</field></block></value></block>"
+                    },
+                  {
+                    "kind": "block",
+                    "blockxml": "<block type='YrpEZH'><value name='Lcd'><block type='variables_get'><field name='VAR'>Lcd</field></block></value><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+                  },
+                  {
+                    "kind": "block",
+                    "blockxml": "<block type='pLpkHi'><value name='Lcd'><block type='variables_get'><field name='VAR'>Lcd</field></block></value><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+                  },
+                  {
+                    "kind": "block",
+                    "blockxml": "<block type='FsWBeE'><value name='Lcd'><block type='variables_get'><field name='VAR'>Lcd</field></block></value><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+                  },
+                  {
+                    "kind": "block",
+                    "blockxml": "<block type='PFLdYN'><value name='Lcd'><block type='variables_get'><field name='VAR'>Lcd</field></block></value></block>"
+                  }
                 ]
             },
             {

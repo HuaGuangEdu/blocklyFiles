@@ -1,51 +1,50 @@
 {
-  "blocklyFilesUrls": [
-    "../assets/blocklyFiles/blocks/0010yuyin_b.js",
-    "../assets/blocklyFiles/generators/0010yuyin_g.js"
-  ],
-
-  "category": {
-    "kind": "category",
-    "name": "语音",
-    "colour": "ffa6c1",
-    "icon":"./语音.png",
-    "contents": [
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_yuyin_s'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_luyin'><value name='yuyin_s_luyin'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='luyin_time'><block type='math_number'><field name='NUM'>3</field></block></value><value name='luyin_path'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_yuyin_txt'><value name='yuyin_s_stt'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_read_txt'><value name='yuyin_s_tts'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt_4'><block type='text'><field name='TEXT'>你好</field></block></value><value name='filename'><block type='variables_get'><field name='VAR'>audio</field></block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_read_txt_1'><value name='yuyin_s_play'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='filename_1'><block type='variables_get'><field name='VAR'>audio</field></block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_robot_get_text'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'>  <field name='TEXT'>很高心认识你！</field> </block></value></block>"
-	},
-	{
-	"kind": "block",
-	"blockxml": "<block type='hardware_raspberrypi_robot_word'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
-	},
-	{
-	"kind":"block",
-	"blockxml":"<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
-	},
-	{
-		"kind":"block",
-		"blockxml":"<block type='change_setting_DUI'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
-	}
-    ]
-  }
+    "blocklyFilesUrls": [
+        "../assets/blocklyFiles/blocks/0010yuyin_b.js",
+        "../assets/blocklyFiles/generators/0010yuyin_g.js"
+    ],
+    "category": {
+        "kind": "category",
+        "name": "语音",
+        "colour": "ffa6c1",
+        "icon": "./语音.png",
+        "contents": [
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_yuyin_s'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_luyin'><value name='yuyin_s_luyin'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='luyin_time'><block type='math_number'><field name='NUM'>3</field></block></value><value name='luyin_path'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_yuyin_txt'><value name='yuyin_s_stt'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_read_txt'><value name='yuyin_s_tts'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt_4'><block type='text'><field name='TEXT'>你好</field></block></value><value name='filename'><block type='variables_get'><field name='VAR'>audio</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_read_txt_1'><value name='yuyin_s_play'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='filename_1'><block type='variables_get'><field name='VAR'>audio</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_robot_get_text'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'>  <field name='TEXT'>很高心认识你！</field> </block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_robot_word'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='change_setting_DUI'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
+            }
+        ]
+    }
 }

@@ -339,3 +339,46 @@ Blockly.Python.ZesoGg= function () {
  var code='gpio.Servo(0)'+'\n';
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
+Blockly.Python.ZesoGg= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var code='gpio.Servo(0)'+'\n';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Python["uUtesR"]= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var Lcd=Blockly.Python.valueToCode(this,'Lcd',Blockly.Python.ORDER_ATOMIC);
+  var code=Lcd+'=gpio.Screen()'+'\n';
+ return code;
+};
+
+Blockly.Python["YrpEZH"]= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var Lcd=Blockly.Python.valueToCode(this,'Lcd',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=Lcd+'.screen_display('+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["pLpkHi"]= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var Lcd=Blockly.Python.valueToCode(this,'Lcd',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=Lcd+'.screen_display_picture('+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["FsWBeE"]= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var Lcd=Blockly.Python.valueToCode(this,'Lcd',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=Lcd+'.video_show('+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["PFLdYN"]= function () {
+  Blockly.Python.definitions_['control_gpio']='from control import gpio';
+ var Lcd=Blockly.Python.valueToCode(this,'Lcd',Blockly.Python.ORDER_ATOMIC);
+  var code=Lcd+'.live_view_camera()'+'\n';
+ return code;
+};

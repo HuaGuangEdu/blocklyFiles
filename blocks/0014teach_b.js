@@ -710,3 +710,61 @@ Blockly.Blocks.ZesoGg={
   this.setOutput(true);
   },  
 };
+Blockly.Blocks["uUtesR"]={
+  init: function () {
+  this.setColour("20");
+  this.appendDummyInput().appendField('赋值');
+  this.appendValueInput('Lcd').setCheck('var');
+  this.appendDummyInput().appendField('为屏幕');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["YrpEZH"]={
+  init: function () {
+      this.setColour("20");
+      this.appendValueInput('Lcd').setCheck('var');
+  this.appendDummyInput().appendField('屏幕显示字符串');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["pLpkHi"]={
+  init: function () {
+    this.setColour("20");
+    this.appendValueInput('Lcd').setCheck('var');
+  this.appendDummyInput().appendField('屏幕显示图片，请输入图片路径');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["FsWBeE"]={
+  init: function () {
+      this.setColour("20");
+      this.appendValueInput('Lcd').setCheck('var');
+  this.appendDummyInput().appendField('屏幕显示视频，请输入视频路径');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["PFLdYN"]={
+  init: function () {
+    this.setColour("20");
+    this.appendValueInput('Lcd').setCheck('var');
+  this.appendDummyInput().appendField('屏幕显示摄像头内容');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};

@@ -5,7 +5,7 @@ Blockly.Python.open_file=function() {
     var f = Blockly.Python.valueToCode(this, 'f', Blockly.Python.ORDER_ATOMIC);
     var filename =Blockly.Python.valueToCode(this, 'filename', Blockly.Python.ORDER_ATOMIC);
     var mode1 = this.getFieldValue('DIR');
-    var code = f+"=file_operation.Common_file("+filename+","+mode1+")\n";
+    var code = f+"=file_operation.Common_file("+filename+","+mode1+",__file__)\n";
     return code;
 };
 
@@ -75,7 +75,7 @@ Blockly.Python.open_json=function() {
     var f = Blockly.Python.valueToCode(this, 'f', Blockly.Python.ORDER_ATOMIC);
     var filename =Blockly.Python.valueToCode(this, 'filename', Blockly.Python.ORDER_ATOMIC);
     var mode1 = this.getFieldValue('DIR');
-    var code = f+"=file_operation.Json("+filename+","+mode1+")\n";
+    var code = f+"=file_operation.Json("+filename+","+mode1+",__file__)\n";
     return code;
 };
 
@@ -100,7 +100,7 @@ Blockly.Python.open_csv=function() {
     Blockly.Python.definitions_['File'] = 'from control import file_operation';
     var f = Blockly.Python.valueToCode(this, 'f', Blockly.Python.ORDER_ATOMIC);
     var filename =Blockly.Python.valueToCode(this, 'filename', Blockly.Python.ORDER_ATOMIC);
-    var code = f+"=file_operation.CSV("+filename+")\n";
+    var code = f+"=file_operation.CSV("+filename+",__file__)\n";
     return code;
 };
 
