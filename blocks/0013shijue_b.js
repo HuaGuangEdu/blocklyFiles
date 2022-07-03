@@ -1178,3 +1178,70 @@ Blockly.Blocks["ByqIWH"]={
   this.setOutput(true);
   },  
 };
+
+Blockly.Blocks["KQxkqa"]={
+  init: function () {
+  this.setColour(200);
+  this.appendDummyInput().appendField('选取图像');
+  this.appendValueInput('img').setCheck('var');
+  this.appendDummyInput().appendField('中高度为');
+  this.appendValueInput('NUM1', Number).setCheck('Number');
+  this.appendDummyInput().appendField('到');
+  this.appendValueInput('NUM2', Number).setCheck('Number');
+  this.appendDummyInput().appendField('，宽度为');
+  this.appendValueInput('NUM3', Number).setCheck('Number');
+  this.appendDummyInput().appendField('到');
+  this.appendValueInput('NUM4', Number).setCheck('Number');
+  this.appendDummyInput().appendField('的区域');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};
+
+
+Blockly.Blocks["OPyGhS"]={
+  init: function () {
+  this.setColour(200);
+  this.appendDummyInput().appendField('赋值');
+  this.appendValueInput('imgBlack').setCheck('var');
+  this.appendDummyInput().appendField('为与');
+  this.appendValueInput('img').setCheck('var');
+  this.appendDummyInput().appendField('图像一样大的空图像');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["cQhjMv"]={
+  init: function () {
+  this.setColour(200);
+  this.appendDummyInput().appendField('在图像');
+  this.appendValueInput('img').setCheck('var');
+  this.appendDummyInput().appendField('的点（');
+  this.appendValueInput('NUM1', Number).setCheck('Number');
+  this.appendDummyInput().appendField(',');
+  this.appendValueInput('NUM2', Number).setCheck('Number');
+  this.appendDummyInput().appendField('）和点（');
+  this.appendValueInput('NUM3', Number).setCheck('Number');
+  this.appendDummyInput().appendField(',');
+  this.appendValueInput('NUM4', Number).setCheck('Number');
+  this.appendDummyInput().appendField('）之间画线');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["oBxOUS"]={
+  init: function () {
+  this.setColour(200);
+  this.appendDummyInput().appendField('赋值');
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('等于');
+  this.appendValueInput('b').setCheck('var');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
