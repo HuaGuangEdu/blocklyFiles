@@ -90,6 +90,22 @@
                     {
                         "kind": "block",
                         "blockxml": "<block type='pEiDgq'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='img'><block type='variables_get'><field name='VAR'>img</field></block></value><value name='NUM'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='KQxkqa'><value name='img'><block type='variables_get'><field name='VAR'>img</field></block></value><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM2'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM3'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM4'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='OPyGhS'><value name='imgBlack'><block type='variables_get'><field name='VAR'>imgBlack</field></block></value><value name='img'><block type='variables_get'><field name='VAR'>img</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='cQhjMv'><value name='img'><block type='variables_get'><field name='VAR'>img</field></block></value><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM2'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM3'><block type='math_number'><field name='NUM'>0</field></block></value><value name='NUM4'><block type='math_number'><field name='NUM'>0</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='oBxOUS'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='b'><block type='variables_get'><field name='VAR'>b</field></block></value></block>"
                     }
                 ]
             },
