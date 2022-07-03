@@ -846,3 +846,42 @@ Blockly.Python["ByqIWH"]= function () {
   var code=a+'.img'+'';
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
+
+Blockly.Python["KQxkqa"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var img=Blockly.Python.valueToCode(this,'img',Blockly.Python.ORDER_ATOMIC);
+  var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
+  var NUM2=Blockly.Python.valueToCode(this,'NUM2',Blockly.Python.ORDER_ATOMIC);
+  var NUM3=Blockly.Python.valueToCode(this,'NUM3',Blockly.Python.ORDER_ATOMIC);
+  var NUM4=Blockly.Python.valueToCode(this,'NUM4',Blockly.Python.ORDER_ATOMIC);
+  // if(Number(NUM1)>Number(NUM2)) NUM2 = String(Number(NUM1));
+  var code=img+'['+NUM1+':'+NUM2+','+NUM3+':'+NUM4+']'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Python["OPyGhS"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var imgBlack=Blockly.Python.valueToCode(this,'imgBlack',Blockly.Python.ORDER_ATOMIC);
+  var img=Blockly.Python.valueToCode(this,'img',Blockly.Python.ORDER_ATOMIC);
+  var code=imgBlack+'=shijue1.zeros_like('+img+')'+'\n';
+ return code;
+};
+
+Blockly.Python["cQhjMv"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var img=Blockly.Python.valueToCode(this,'img',Blockly.Python.ORDER_ATOMIC);
+  var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
+  var NUM2=Blockly.Python.valueToCode(this,'NUM2',Blockly.Python.ORDER_ATOMIC);
+  var NUM3=Blockly.Python.valueToCode(this,'NUM3',Blockly.Python.ORDER_ATOMIC);
+  var NUM4=Blockly.Python.valueToCode(this,'NUM4',Blockly.Python.ORDER_ATOMIC);
+  var code='shijue1.line('+img+',('+NUM1+','+NUM2+'),('+NUM3+','+NUM4+'))'+'\n';
+ return code;
+};
+
+Blockly.Python["oBxOUS"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var b=Blockly.Python.valueToCode(this,'b',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'='+b+'\n';
+ return code;
+};
