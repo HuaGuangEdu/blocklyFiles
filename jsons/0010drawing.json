@@ -68,6 +68,10 @@
             {
                 "kind": "block",
                 "blockxml": "<block type='EXEC'><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='XAnNIW'></block>"
             }
         ]
     }
