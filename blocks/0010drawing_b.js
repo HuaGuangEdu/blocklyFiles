@@ -180,3 +180,12 @@ Blockly.Blocks["EXEC"]={
   this.setNextStatement(true, null);
   },
 };
+Blockly.Blocks["XAnNIW"]={
+  init: function () {
+  this.setColour(60);
+  this.appendDummyInput().appendField('生成词云');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
