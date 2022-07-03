@@ -106,3 +106,9 @@ Blockly.Python["EXEC"]= function () {
 var code='exec('+STR1+')'+'\n';
  return code;
 };
+
+Blockly.Python["XAnNIW"]= function () {
+  Blockly.Python.definitions_['control_unique']='from control import unique';
+ var code='unique.generateCloud()'+'\n';
+ return code;
+};
