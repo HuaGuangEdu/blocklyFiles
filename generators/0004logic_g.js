@@ -1,13 +1,3 @@
-/**
- * @license
- * Copyright 2012 Google LLC
- * SPDX-License-Identifier: Apache-2.0
- */
-
-/**
- * @fileoverview Generating Python for logic blocks.
- * @author q.neutron@gmail.com (Quynh Neutron)
- */
 'use strict';
 
 Blockly.Python.logic_is_in = function() {
@@ -17,59 +7,14 @@ Blockly.Python.logic_is_in = function() {
   return [code ,Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python['controls_if'] = function(block) {
-  // If/elseif/else condition.
-  var n = 0;
-  var code = '', branchCode, conditionCode;
-  if (Blockly.Python.STATEMENT_PREFIX) {
-    // Automatic prefix insertion is switched off for this block.  Add manually.
-    code += Blockly.Python.injectId(Blockly.Python.STATEMENT_PREFIX, block);
-  }
-  do {
-    conditionCode = Blockly.Python.valueToCode(block, 'IF' + n,
-        Blockly.Python.ORDER_NONE) || 'False';
-    branchCode = Blockly.Python.statementToCode(block, 'DO' + n) ||
-        Blockly.Python.PASS;
-    if (Blockly.Python.STATEMENT_SUFFIX) {
-      branchCode = Blockly.Python.prefixLines(
-          Blockly.Python.injectId(Blockly.Python.STATEMENT_SUFFIX, block),
-          Blockly.Python.INDENT) + branchCode;
-    }
-    code += (n == 0 ? 'if ' : 'elif ' ) + conditionCode + ':\n' + branchCode;
-    ++n;
-  } while (block.getInput('IF' + n));
 
-  if (block.getInput('ELSE') || Blockly.Python.STATEMENT_SUFFIX) {
-    branchCode = Blockly.Python.statementToCode(block, 'ELSE') ||
-        Blockly.Python.PASS;
-    if (Blockly.Python.STATEMENT_SUFFIX) {
-      branchCode = Blockly.Python.prefixLines(
-          Blockly.Python.injectId(Blockly.Python.STATEMENT_SUFFIX, block),
-          Blockly.Python.INDENT) + branchCode;
-    }
-    code += 'else:\n' + branchCode;
-  }
-  return code;
-};
 
-Blockly.Python['controls_ifelse'] = Blockly.Python['controls_if'];
-
-Blockly.Python['logic_compare'] = function(block) {
-  // Comparison operator.
-  var OPERATORS = {
-    'EQ': '==',
-    'NEQ': '!=',
-    'LT': '<',
-    'LTE': '<=',
-    'GT': '>',
-    'GTE': '>='
-  };
-  var operator = OPERATORS[block.getFieldValue('OP')];
-  var order = Blockly.Python.ORDER_RELATIONAL;
-  var argument0 = Blockly.Python.valueToCode(block, 'A', order) || '0';
-  var argument1 = Blockly.Python.valueToCode(block, 'B', order) || '0';
+Blockly.Python['logic_compare'] = function() {
+  var operator = this.getFieldValue('DIR');
+  var argument0 = Blockly.Python.valueToCode(this, 'A', Blockly.Python.ORDER_ATOMIC) || '0';
+  var argument1 = Blockly.Python.valueToCode(this, 'B', Blockly.Python.ORDER_ATOMIC) || '0';
   var code = argument0 + ' ' + operator + ' ' + argument1;
-  return [code, order];
+  return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
 
@@ -107,13 +52,11 @@ Blockly.Python['logic_negate'] = function(block) {
 };
 
 Blockly.Python['logic_boolean'] = function(block) {
-  // Boolean values true and false.
   var code = (block.getFieldValue('BOOL') == 'TRUE') ? 'True' : 'False';
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
 Blockly.Python['logic_null'] = function(block) {
-  // Null data type.
   return ['None', Blockly.Python.ORDER_ATOMIC];
 };
 
@@ -127,4 +70,25 @@ Blockly.Python['logic_ternary'] = function(block) {
       Blockly.Python.ORDER_CONDITIONAL) || 'None';
   var code = value_then + ' if ' + value_if + ' else ' + value_else;
   return [code, Blockly.Python.ORDER_CONDITIONAL];
+};
+
+Blockly.Python['controls_if'] = function() {
+  var n = 0;
+  var code = '', branchCode, conditionCode;
+  do {
+    conditionCode = Blockly.Python.valueToCode(this, 'IF' + n,
+      Blockly.Python.ORDER_NONE) || 'False';
+    branchCode = Blockly.Python.statementToCode(this, 'DO' + n);
+
+    code += (n > 0 ? 'else ' : '') +
+        'if ' + conditionCode + ':\n' + branchCode;
+
+    n += 1;
+  } while (this.getInput('IF' + n));
+
+  if (this.getInput('ELSE')) {
+    branchCode = Blockly.Python.statementToCode(this, 'ELSE');
+    code += 'else: \n' + branchCode + '';
+  }
+  return code + '\n';
 };
