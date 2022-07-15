@@ -72,8 +72,6 @@ Blockly.Python.text.forceString_ = function(value) {
 Blockly.Python.text.forceString_.strRegExp = /^\s*'([^']|\\')*'\s*$/;
 
 Blockly.Python['text_join'] = function(block) {
-  // Create a string made up of any number of elements of any type.
-  //Should we allow joining by '-' or ',' or any other characters?
   switch (block.itemCount_) {
     case 0:
       return ['\'\'', Blockly.Python.ORDER_ATOMIC];
