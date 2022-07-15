@@ -1,12 +1,6 @@
 'use strict';
 
 
-Blockly.Python.inout_input = function() {
-  var str = Blockly.Python.valueToCode(this, 'VAR', Blockly.Python.ORDER_ATOMIC) || '\"\"';
-  return ['input(' + str+',flush=True)', Blockly.Python.ORDER_ATOMIC];
-};
-
-
 Blockly.Python.inout_print = function() {
   var str = Blockly.Python.valueToCode(this, 'VAR', Blockly.Python.ORDER_ATOMIC) || '\"\"';
   var code = "print("+str+",flush=True)\n";
@@ -30,28 +24,8 @@ Blockly.Python.inout_print_end = function() {
 Blockly.Python.inout_type_input = function() {
   var str = Blockly.Python.valueToCode(this, 'VAR', Blockly.Python.ORDER_ATOMIC) || '\"\"';
   var type = this.getFieldValue('DIR');
-  var num = Blockly.Python.valueToCode(this, 'VAR', Blockly.Python.ORDER_ATOMIC);
-  if (type=='str') {var code = 'input(' + str +')'}
-  else if (type=='int') {var code = 'int(input(' + str +'))'}
-  else if (type=='float') {var code = 'float(input(' + str +'))'}
-  //var code=varname+"." + type + "("   + ')';
+  var code= type + "(input(" + str + "))";
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.inout_print_many = function() {
 
-  var dropdown_type = this.getFieldValue('TYPE');
-
-  var code = new Array(this.itemCount_);
-  var default_value = '0';
-
-
-  for (var n = 0; n < this.itemCount_; n++) {
-
-    code[n] = Blockly.Python.valueToCode(this, 'ADD' + n,
-        Blockly.Python.ORDER_NONE) || default_value;
-  }
-
-  var code = 'print(' + code.join(', ') + ')\n';
-  return code;
-};
