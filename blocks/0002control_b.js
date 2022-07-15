@@ -1,6 +1,6 @@
 'use strict';
 
-//Blockly.Blocks.loops.HUE = 120;
+
 
 Blockly.Blocks['time_sleep'] = {
   init: function() {
@@ -110,3 +110,55 @@ Blockly.Blocks['key_value'] = {
     this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['controls_repeat_ext'] = {
+    init: function() {
+      this.setColour(120);
+      this.appendDummyInput("")
+        .appendField("重复")
+      this.appendValueInput('TIMES', Number)
+      .setCheck('Number');
+      this.appendDummyInput("")
+        .appendField("次")
+      this.appendStatementInput('DO')
+        .appendField('执行'); 
+        this.setPreviousStatement(true, null);
+            this.setNextStatement(true, null);
+            this.setInputsInline(true);
+      }
+  };
+
+Blockly.Blocks['controls_whileUntil'] = {
+init: function() {
+    this.setColour(120);
+    var mode =
+            [['当条件满足时重复',''],["重复直到条件满足",'not']];
+        this.appendDummyInput("")
+            .appendField(new Blockly.FieldDropdown(mode), 'DIR')
+    this.appendValueInput('VALUE')
+    
+    this.appendStatementInput('DO')
+    .appendField('执行'); 
+    this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setInputsInline(true);
+    }
+};
+
+Blockly.Blocks['controls_flow_statements'] = {
+    init: function() {
+        this.setColour(120);
+        var mode =
+                [['跳出循环','break'],["继续下一轮循环",'continue']];
+        this.appendDummyInput("")
+            .appendField(new Blockly.FieldDropdown(mode), 'DIR')
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setInputsInline(true);
+        }
+};
+
+
+
+
+
