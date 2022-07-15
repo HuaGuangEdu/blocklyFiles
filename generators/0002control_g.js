@@ -263,3 +263,32 @@ Blockly.Python.key_value = function(){
     var code = key + '.char';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
+
+Blockly.Python['controls_repeat_ext'] = function() {
+    var NUM1=Blockly.Python.valueToCode(this,'TIMES',Blockly.Python.ORDER_ATOMIC);
+    var statement=Blockly.Python.statementToCode(this,'DO',Blockly.Python.ORDER_ATOMIC);
+    if(statement==''){
+      statement='  pass';
+    }
+    var code = 'for count in range('+NUM1+'):\n'+statement;
+    return code;
+  };
+
+Blockly.Python['controls_whileUntil'] = function() {
+    var mode=this.getFieldValue('DIR');
+    var flag=Blockly.Python.valueToCode(this,'VALUE',Blockly.Python.ORDER_ATOMIC)||"False";
+    var statement=Blockly.Python.statementToCode(this,'DO',Blockly.Python.ORDER_ATOMIC)||"  pass";
+
+    var code = 'while '+mode+" "+flag+':\n'+statement;
+    return code;
+};
+
+Blockly.Python['controls_flow_statements'] = function() {
+    var mode=this.getFieldValue('DIR');
+
+    var code = mode;
+    return code;
+};
+  
+
+
