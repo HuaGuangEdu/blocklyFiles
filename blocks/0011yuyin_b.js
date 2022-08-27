@@ -251,7 +251,7 @@ Blockly.Blocks["_GoQFu"]={
   init: function () {
   this.setColour(180);
   this.appendValueInput('s').setCheck('var');
-  this.appendDummyInput().appendField('进行语音识别,持续时间为');
+  this.appendDummyInput().appendField('开始本地语音识别的文字,持续时间为');
   this.appendValueInput('NUM1', Number).setCheck('Number');
   this.appendDummyInput().appendField('秒');
   this.setInputsInline(true);

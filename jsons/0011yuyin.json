@@ -14,16 +14,24 @@
                 "blockxml": "<block type='hardware_raspberrypi_yuyin_s'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
             },
             {
+                "kind": "label",
+                "text": "语音识别"
+            },
+            {
                 "kind": "block",
                 "blockxml": "<block type='hardware_raspberrypi_luyin'><value name='yuyin_s_luyin'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='luyin_time'><block type='math_number'><field name='NUM'>3</field></block></value><value name='luyin_path'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='hardware_raspberrypi_yuyin_txt'><value name='yuyin_s_stt'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
             },
             {
                 "kind": "block",
                 "blockxml": "<block type='_GoQFu'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='NUM1'><block type='math_number'><field name='NUM'>5</field></block></value></block>"
             },
             {
-                "kind": "block",
-                "blockxml": "<block type='hardware_raspberrypi_yuyin_txt'><value name='yuyin_s_stt'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='variables_get'><field name='VAR'>speech</field></block></value></block>"
+                "kind": "label",
+                "text": "语音合成"
             },
             {
                 "kind": "block",
@@ -35,6 +43,14 @@
             },
             {
                 "kind": "block",
+                "blockxml": "<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
+            },
+            {
+                "kind": "label",
+                "text": "聊天机器人"
+            },
+            {
+                "kind": "block",
                 "blockxml": "<block type='hardware_raspberrypi_robot_get_text'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'>  <field name='TEXT'>很高心认识你！</field> </block></value></block>"
             },
             {
@@ -42,8 +58,8 @@
                 "blockxml": "<block type='hardware_raspberrypi_robot_word'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value></block>"
             },
             {
-                "kind": "block",
-                "blockxml": "<block type='plat_txt'><value name='s'><block type='variables_get'><field name='VAR'>s</field></block></value><value name='txt'><block type='text'><field name='TEXT'>你好</field></block></value></block>"
+                "kind": "label",
+                "text": "其他操作"
             },
             {
                 "kind": "block",
