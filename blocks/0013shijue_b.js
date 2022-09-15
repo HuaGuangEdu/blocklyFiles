@@ -1245,3 +1245,62 @@ Blockly.Blocks["oBxOUS"]={
   this.setNextStatement(true, null);
   },
 };
+
+
+Blockly.Blocks["pUkaBl"]={
+  init: function () {
+  this.setColour(200);
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('初始化颜色学习器');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["DYtvIF"]={
+  init: function () {
+  this.setColour(200);
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('打开颜色学习数据收集器');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["bSsxnz"]={
+  init: function () {
+  this.setColour(200);
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('开始颜色训练，颜色种类有');
+  this.appendValueInput('NUM1', Number).setCheck('Number');
+  this.appendDummyInput().appendField('个，模型取名为');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["tikTUV"]={
+  init: function () {
+  this.setColour(200);
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('开始判断颜色种类，使用的模型名字是');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["SubfZk"]={
+  init: function () {
+  this.setColour(200);
+  this.appendValueInput('a').setCheck('var');
+  this.appendDummyInput().appendField('判断的颜色种类');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};

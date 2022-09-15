@@ -342,6 +342,30 @@
                     {
                         "kind": "block",
                         "blockxml": "<block type='OCGUTW'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "label",
+                        "text": "颜色学习"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='pUkaBl'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='DYtvIF'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='bSsxnz'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='NUM1'><block type='math_number'><field name='NUM'>0</field></block></value><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='tikTUV'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='STR1'><block type='text'><field name='TEXT'></field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
+                        "blockxml": "<block type='SubfZk'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     }
                 ]
             },

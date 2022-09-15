@@ -885,3 +885,42 @@ Blockly.Python["oBxOUS"]= function () {
   var code=a+'='+b+'\n';
  return code;
 };
+
+
+Blockly.Python["pUkaBl"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'.color_cluster_init()'+'\n';
+ return code;
+};
+
+Blockly.Python["DYtvIF"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'.color_cluster_get()'+'\n';
+ return code;
+};
+
+Blockly.Python["bSsxnz"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'.color_cluster_train('+NUM1+','+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["tikTUV"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'.color_cluster_predict('+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["SubfZk"]= function () {
+  Blockly.Python.definitions_['control_shijue1']='from control import shijue1';
+ var a=Blockly.Python.valueToCode(this,'a',Blockly.Python.ORDER_ATOMIC);
+  var code=a+'.color_cluster_result'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
