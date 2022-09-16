@@ -34,7 +34,7 @@ Blockly.Blocks.datasets_return={
     this.appendValueInput('datasets')
       .setCheck('var');
     this.appendDummyInput()
-      .appendField('的输入特征(训练)');
+      .appendField('中训练集的输入特征');
       this.setInputsInline(true);
       this.setOutput(true);
   }
@@ -47,7 +47,7 @@ Blockly.Blocks.datasets_return1={
     this.appendValueInput('datasets')
       .setCheck('var');
     this.appendDummyInput()
-      .appendField('的输出标签(训练)');
+      .appendField('中训练集的输出标签');
       this.setInputsInline(true);
       this.setOutput(true);
   }
@@ -60,7 +60,7 @@ Blockly.Blocks.datasets_return2={
     this.appendValueInput('datasets')
       .setCheck('var');
     this.appendDummyInput()
-      .appendField('的输入特征(测试)');
+      .appendField('中测试集的输入特征');
       this.setInputsInline(true);
       this.setOutput(true);
   }
@@ -73,7 +73,7 @@ Blockly.Blocks.datasets_return3={
     this.appendValueInput('datasets')
       .setCheck('var');
     this.appendDummyInput()
-      .appendField('的输出标签(测试)');
+      .appendField('中测试集的输出标签');
       this.setInputsInline(true);
       this.setOutput(true);
   }
