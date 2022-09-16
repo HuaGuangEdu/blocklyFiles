@@ -10,11 +10,10 @@ Blockly.Blocks.hardware_raspberrypi_machine_learning_datasets = {
             .appendField('为加载的')
         var dataset_name =
             [
-                ["手写数字", 'digits'],
-              ["鸢尾花", 'iris'],
-              ["乳腺癌", 'breast_cancer'],
-              // ["糖尿病", 'diabetes'],
-              // ["房价", "boston"]
+                ["手写数字", '手写数字'],
+              ["鸢尾花", '鸢尾花'],
+              ["乳腺癌", '威斯康辛州乳腺癌'],
+              ["红酒","红酒"]
             ];
         this.appendDummyInput("")
             .appendField(new Blockly.FieldDropdown(dataset_name), 'dataset_name')
@@ -31,61 +30,69 @@ Blockly.Blocks.datasets_return={
   init: function () {
     this.setColour(50);
     this.appendDummyInput()
-      .appendField('赋值');
-    this.appendValueInput('feature')
-      .setCheck('var');
-    this.appendDummyInput()
-      .appendField('和');
-    this.appendValueInput('label')
-      .setCheck('var');
-    this.appendDummyInput()
-      .appendField('分别是数据集');
+      .appendField('数据集');
     this.appendValueInput('datasets')
       .setCheck('var');
     this.appendDummyInput()
-      .appendField('的特征和标签');
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
+      .appendField('的输入特征(训练)');
+      this.setInputsInline(true);
+      this.setOutput(true);
+  }
+};
+Blockly.Blocks.datasets_return1={
+  init: function () {
+    this.setColour(50);
+    this.appendDummyInput()
+      .appendField('数据集');
+    this.appendValueInput('datasets')
+      .setCheck('var');
+    this.appendDummyInput()
+      .appendField('的输出标签(训练)');
+      this.setInputsInline(true);
+      this.setOutput(true);
+  }
+};
+Blockly.Blocks.datasets_return2={
+  init: function () {
+    this.setColour(50);
+    this.appendDummyInput()
+      .appendField('数据集');
+    this.appendValueInput('datasets')
+      .setCheck('var');
+    this.appendDummyInput()
+      .appendField('的输入特征(测试)');
+      this.setInputsInline(true);
+      this.setOutput(true);
+  }
+};
+Blockly.Blocks.datasets_return3={
+  init: function () {
+    this.setColour(50);
+    this.appendDummyInput()
+      .appendField('数据集');
+    this.appendValueInput('datasets')
+      .setCheck('var');
+    this.appendDummyInput()
+      .appendField('的输出标签(测试)');
+      this.setInputsInline(true);
+      this.setOutput(true);
   }
 };
 
 Blockly.Blocks.split_ret={
   init: function () {
   this.setColour(50);
-  this.appendDummyInput().appendField('划分数据集');
+  this.appendDummyInput().appendField('设置数据集');
   this.appendValueInput('datasets').setCheck('var');
-  this.appendDummyInput().appendField('为训练集');
-  this.appendValueInput('train_datasets').setCheck('var');
-  this.appendDummyInput().appendField('和验证集');
-  this.appendValueInput('test_datasets').setCheck('var');
-  this.appendDummyInput()
-      .appendField('  其中验证集占');
-    this.appendValueInput('split_num', Number)
-    this.appendDummyInput().appendField('%');
+  this.appendDummyInput().appendField('中训练集占比为');
+  this.appendValueInput('split_num', Number)
+  this.appendDummyInput().appendField('%');
   this.setInputsInline(true);
   this.setPreviousStatement(true, null);
   this.setNextStatement(true, null);
   },
 };
 
-
-Blockly.Blocks.model_load={
-  init: function () {
-    this.setColour(90);
-    this.appendDummyInput()
-       .appendField('加载');
-    this.appendValueInput('model_path', String)
-    .setCheck("String");
-    this.appendDummyInput()
-       .appendField('.joblib中的模型并赋值给变量');
-    this.appendValueInput('clf')
-      .setCheck('var');
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-  }
-};
 
 
 
@@ -98,9 +105,8 @@ Blockly.Blocks.PHRumu={
   this.appendDummyInput().appendField('赋值');
   this.appendValueInput('model').setCheck('var');
   this.appendDummyInput().appendField('为');
-  var MODE1=[['决策树', "'Tree'"], ['随机森林', "'RandomForest'"],
-    ['k近邻', "'KNeighbors'"], ['逻辑回归', "'LogisticRegress'"],
-    ['支持向量机', "'SVM'"], ['神经网络', "'MLPClassifier'"]];
+  var MODE1=[['决策树', "'决策树'"], ['随机森林', "'随机森林'"],
+    ['支持向量机', "'支持向量机'"], ['神经网络', "'神经网络'"]];
   this.appendDummyInput('').appendField(new Blockly.FieldDropdown(MODE1),'MODE1');
   this.appendDummyInput().appendField('算法模型');
   this.setInputsInline(true);
@@ -113,10 +119,13 @@ Blockly.Blocks.HZgrFe={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('用数据集');
-  this.appendValueInput('train_datasets').setCheck('var');
-  this.appendDummyInput().appendField('训练');
+  this.appendValueInput('datasets').setCheck('var');
+  this.appendDummyInput().appendField('的训练集来训练');
   this.appendValueInput('model').setCheck('var');
-  this.appendDummyInput().appendField('模型');
+  this.appendDummyInput().appendField('模型,');
+  var MODE1=[['启用', ", visible=True"], ['关闭', ""]];
+  this.appendDummyInput('').appendField(new Blockly.FieldDropdown(MODE1),'MODE1');
+  this.appendDummyInput().appendField('可视化');
   this.setInputsInline(true);
   this.setPreviousStatement(true, null);
   this.setNextStatement(true, null);
@@ -125,15 +134,15 @@ Blockly.Blocks.HZgrFe={
 
 Blockly.Blocks.HZgrFd={
   init: function () {
-  this.setColour(50);
-  this.appendDummyInput().appendField('用验证集');
-  this.appendValueInput('test_datasets').setCheck('var');
-  this.appendDummyInput().appendField('测试');
-  this.appendValueInput('model').setCheck('var');
-  this.appendDummyInput().appendField('模型');
-  this.setInputsInline(true);
-  this.setPreviousStatement(true, null);
-  this.setNextStatement(true, null);
+    this.setColour(50);
+    this.appendDummyInput().appendField('用数据集');
+    this.appendValueInput('datasets').setCheck('var');
+    this.appendDummyInput().appendField('的测试集来测试');
+    this.appendValueInput('model').setCheck('var');
+    this.appendDummyInput().appendField('模型');
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
   },
 };
 
@@ -278,18 +287,18 @@ Blockly.Blocks.bUfoAo={
   },
 };
 
-Blockly.Blocks.XQLwTZ={
-  init: function () {
-  this.setColour(50);
-  this.appendDummyInput().appendField('设置k近邻');
-  this.appendValueInput('model').setCheck('var');
-  this.appendDummyInput().appendField('所取的邻近点的个数为');
-  this.appendValueInput('NUM1', Number).setCheck('Number');
-  this.setInputsInline(true);
-  this.setPreviousStatement(true, null);
-  this.setNextStatement(true, null);
-  },
-};
+// Blockly.Blocks.XQLwTZ={
+//   init: function () {
+//   this.setColour(50);
+//   this.appendDummyInput().appendField('设置k近邻');
+//   this.appendValueInput('model').setCheck('var');
+//   this.appendDummyInput().appendField('所取的邻近点的个数为');
+//   this.appendValueInput('NUM1', Number).setCheck('Number');
+//   this.setInputsInline(true);
+//   this.setPreviousStatement(true, null);
+//   this.setNextStatement(true, null);
+//   },
+// };
 
 Blockly.Blocks.JjHvot={
   init: function () {
@@ -333,7 +342,7 @@ Blockly.Blocks.cxWWzN={
 Blockly.Blocks.fHvBNC={
   init: function () {
   this.setColour(50);
-  this.appendDummyInput().appendField('设置逻辑回归、支持向量机、神经网络模型');
+  this.appendDummyInput().appendField('设置支持向量机、神经网络模型');
   this.appendValueInput('model').setCheck('var');
   this.appendDummyInput().appendField('的最大迭代次数为');
   this.appendValueInput('NUM1', Number).setCheck('Number');
