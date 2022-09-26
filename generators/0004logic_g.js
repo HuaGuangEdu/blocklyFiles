@@ -90,6 +90,7 @@ Blockly.Python['controls_if'] = function() {
     branchCode = Blockly.Python.statementToCode(this, 'ELSE');
     code += 'else: \n' + branchCode + '';
   }
-  code.code.replace("else if","elif")
+  console.log(code)
+  code = code.replaceAll("else if","elif")
   return code + '\n';
 };
