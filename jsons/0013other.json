@@ -1,0 +1,26 @@
+{
+    "blocklyFilesUrls": [
+        "../assets/blocklyFiles/blocks/0013other_b.js",
+        "../assets/blocklyFiles/generators/0013other_g.js"
+    ],
+    "category": {
+        "kind": "category",
+        "name": "案例体验",
+        "colour": "ffa6c1",
+        "icon": "./案例体验.png",
+        "contents": [
+            {
+                "kind": "block",
+                "blockxml": "<block type='flappy_bird'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='driverless_car_raspberrypi_car_xunxian'></block>"
+            },
+            {
+                "kind": "block",
+                "blockxml": "<block type='autoPoetry'></block>"
+            }
+        ]
+    }
+}
