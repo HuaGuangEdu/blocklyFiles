@@ -5,20 +5,20 @@ Blockly.Blocks["emulator_init"] = {
   init: function () {
     this.setColour(200);
     this.appendDummyInput()
-        .appendField('仿真初始化，设置虚拟场景为');
+      .appendField('仿真初始化，设置虚拟场景为');
     var level =
-        [
-            ["默认", ''],
-            ["空白", '0'],
-            ["红外", '1'],
-            ["超声波", '2'],
-            ["简单运动", '3'],
-            ["简单巡线", '4'],
-            ["智能家居", '5'],
-            ["金沙湾", '6']
-        ];
+      [
+        ["默认", ''],
+        ["空白", '0'],
+        ["红外", '1'],
+        ["超声波", '2'],
+        ["简单运动", '3'],
+        ["简单巡线", '4'],
+        ["智能家居", '5'],
+        ["金沙湾", '6']
+      ];
     this.appendDummyInput("")
-        .appendField(new Blockly.FieldDropdown(level), 'DIR1')
+      .appendField(new Blockly.FieldDropdown(level), 'DIR1')
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -30,13 +30,11 @@ Blockly.Blocks["emulator_camera"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('cam_name')
-        .appendField('赋值')
-        .setCheck('var');
-    this.appendValueInput('cam_num', Number)
+      .appendField('赋值')
+    this.appendValueInput('cam_num')
       .appendField('为')
-      .setCheck('Number');
     this.appendDummyInput()
-        .appendField('号仿真摄像头');
+      .appendField('号仿真摄像头');
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);

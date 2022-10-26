@@ -1,13 +1,13 @@
 {
-  "blocklyFilesUrls":[
+  "blocklyFilesUrls": [
     "../assets/blocklyFiles/blocks/0001inout_b.js",
     "../assets/blocklyFiles/generators/0001inout_g.js"
   ],
-  "category":{
+  "category": {
     "kind": "category",
     "name": "输入/输出",
     "colour": "ffadad",
-    "icon":"./输入输出.png",
+    "icon": "./输入输出.png",
     "contents": [
       {
         "kind": "block",

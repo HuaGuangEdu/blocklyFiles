@@ -10,7 +10,7 @@ Blockly.Blocks["recognizer_init"] = {
     var mode = [["百度在线模型", "'online'"], ["RNN模型", "'k2_rnnt'"],
     ["conformer模型", "'conformer'"], ["流式模型", "'stream'"]]
     this.appendDummyInput("")
-    .appendField(new Blockly.FieldDropdown(mode), 'DIR')
+      .appendField(new Blockly.FieldDropdown(mode), 'DIR')
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -93,7 +93,6 @@ Blockly.Blocks["hardware_raspberrypi_read_txt_1"] = {
     this.setColour(180);
     this.appendValueInput('filename_1')
       .appendField('播放音频')
-      .setCheck("String");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -149,7 +148,7 @@ Blockly.Blocks["play_txt"] = {
 };
 
 
-//图元change_setting_DUI
+
 Blockly.Blocks["change_setting_DUI"] = {
   init: function () {
     this.setColour(180);

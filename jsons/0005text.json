@@ -1,70 +1,70 @@
 {
-    "blocklyFilesUrls":[
-      "../assets/blocklyFiles/blocks/0005text_b.js",
-      "../assets/blocklyFiles/generators/0005text_g.js"
-    ],
-    "category":{
-      "kind": "category",
-      "name": "文本",
-      "colour": "9bf6ff",
-      "icon":"./文本.png",
-      "contents": [
-        {
-          "kind": "block",
-          "blockxml": "<block type='text'></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='text_join'></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='text_append'><value name='TEXT'><shadow type='text'></shadow></value></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='text_length'><value name='VALUE'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_isEmpty'><value name='VALUE'><shadow type='text'><field name='TEXT'></field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":" <block type='text_indexOf'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value><value name='FIND'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_charAt'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_getSubstring'><value name='STRING'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_changeCase'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_trim'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_print'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='text_prompt_ext'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":" <block type='text_lianjie'><value name='A_l'><block type='text'><field name='TEXT'>Hello</field></block></value><value name='B_l'><block type='text'><field name='TEXT'>Blockly</field></block></value></block>"
-        },
-        {
-            "kind": "block",
-            "blockxml": "<block type='XAnNIW'></block>"
-        }
-      ]
-    }
+  "blocklyFilesUrls": [
+    "../assets/blocklyFiles/blocks/0005text_b.js",
+    "../assets/blocklyFiles/generators/0005text_g.js"
+  ],
+  "category": {
+    "kind": "category",
+    "name": "文本",
+    "colour": "9bf6ff",
+    "icon": "./文本.png",
+    "contents": [
+      {
+        "kind": "block",
+        "blockxml": "<block type='text'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_join'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_append'><value name='TEXT'><shadow type='text'></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_length'><value name='VALUE'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_isEmpty'><value name='VALUE'><shadow type='text'><field name='TEXT'></field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": " <block type='text_indexOf'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value><value name='FIND'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_charAt'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_getSubstring'><value name='STRING'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_changeCase'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_trim'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_print'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='text_prompt_ext'><value name='TEXT'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": " <block type='text_lianjie'><value name='A_l'><block type='text'><field name='TEXT'>Hello</field></block></value><value name='B_l'><block type='text'><field name='TEXT'>Blockly</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='XAnNIW'></block>"
+      }
+    ]
   }
+}

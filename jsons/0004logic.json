@@ -1,46 +1,46 @@
 {
-    "blocklyFilesUrls":[
-      "../assets/blocklyFiles/blocks/0004logic_b.js",
-      "../assets/blocklyFiles/generators/0004logic_g.js"
-    ],
-    "category":{
-      "kind": "category",
-      "name": "逻辑",
-      "colour": "90ee90",
-      "icon":"./逻辑.png",
-      "contents": [
-        {
-          "kind": "block",
-          "blockxml": "<block type='controls_if'></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='logic_compare'></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='logic_is_in'><value name='A_in'><block type='text'><field name='TEXT'>a</field></block></value><value name='B_in'><block type='text'><field name='TEXT'>b</field></block></value></block>"
-        },
-        {
-          "kind": "block",
-          "blockxml": "<block type='logic_operation'></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='logic_negate'></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='logic_boolean'></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='logic_null'></block>"
-        },
-        {
-            "kind":"block",
-            "blockxml":"<block type='logic_ternary'></block>"
-        }
-      ]
-    }
+  "blocklyFilesUrls": [
+    "../assets/blocklyFiles/blocks/0004logic_b.js",
+    "../assets/blocklyFiles/generators/0004logic_g.js"
+  ],
+  "category": {
+    "kind": "category",
+    "name": "逻辑",
+    "colour": "90ee90",
+    "icon": "./逻辑.png",
+    "contents": [
+      {
+        "kind": "block",
+        "blockxml": "<block type='controls_if'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_compare'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_is_in'><value name='A_in'><block type='text'><field name='TEXT'>a</field></block></value><value name='B_in'><block type='text'><field name='TEXT'>b</field></block></value></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_operation'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_negate'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_boolean'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_null'></block>"
+      },
+      {
+        "kind": "block",
+        "blockxml": "<block type='logic_ternary'></block>"
+      }
+    ]
   }
+}
