@@ -1,6 +1,6 @@
 'use strict';
 
-Blockly.Blocks.hardware_raspberrypi_machine_learning_datasets = {
+Blockly.Blocks["hardware_raspberrypi_machine_learning_datasets"] = {
     init: function () {
         this.setColour(50);
         this.appendValueInput('datasets')
@@ -26,7 +26,7 @@ Blockly.Blocks.hardware_raspberrypi_machine_learning_datasets = {
 };
 
 //图元datasets_return
-Blockly.Blocks.datasets_return={
+Blockly.Blocks["datasets_return"]={
   init: function () {
     this.setColour(50);
     this.appendDummyInput()
@@ -39,7 +39,7 @@ Blockly.Blocks.datasets_return={
       this.setOutput(true);
   }
 };
-Blockly.Blocks.datasets_return1={
+Blockly.Blocks["datasets_return1"]={
   init: function () {
     this.setColour(50);
     this.appendDummyInput()
@@ -52,7 +52,7 @@ Blockly.Blocks.datasets_return1={
       this.setOutput(true);
   }
 };
-Blockly.Blocks.datasets_return2={
+Blockly.Blocks["datasets_return2"]={
   init: function () {
     this.setColour(50);
     this.appendDummyInput()
@@ -65,7 +65,7 @@ Blockly.Blocks.datasets_return2={
       this.setOutput(true);
   }
 };
-Blockly.Blocks.datasets_return3={
+Blockly.Blocks["datasets_return3"]={
   init: function () {
     this.setColour(50);
     this.appendDummyInput()
@@ -79,7 +79,7 @@ Blockly.Blocks.datasets_return3={
   }
 };
 
-Blockly.Blocks.split_ret={
+Blockly.Blocks["split_ret"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置数据集');
@@ -99,7 +99,7 @@ Blockly.Blocks.split_ret={
 
 
 
-Blockly.Blocks.PHRumu={
+Blockly.Blocks["PHRumu"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('赋值');
@@ -115,7 +115,7 @@ Blockly.Blocks.PHRumu={
   },
 };
 
-Blockly.Blocks.HZgrFe={
+Blockly.Blocks["HZgrFe"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('用数据集');
@@ -132,7 +132,7 @@ Blockly.Blocks.HZgrFe={
   },
 };
 
-Blockly.Blocks.HZgrFd={
+Blockly.Blocks["HZgrFd"]={
   init: function () {
     this.setColour(50);
     this.appendDummyInput().appendField('用数据集');
@@ -146,7 +146,7 @@ Blockly.Blocks.HZgrFd={
   },
 };
 
-Blockly.Blocks.yoiRER={
+Blockly.Blocks["yoiRER"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('模型');
@@ -158,7 +158,7 @@ Blockly.Blocks.yoiRER={
 };
 
 
-Blockly.Blocks.kiMDfK={
+Blockly.Blocks["kiMDfK"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('使用模型');
@@ -171,7 +171,7 @@ Blockly.Blocks.kiMDfK={
   },
 };
 
-Blockly.Blocks.nHRGZf={
+Blockly.Blocks["nHRGZf"]={
   init: function () {
   this.setColour(50);
   this.appendValueInput('model').setCheck('var');
@@ -182,7 +182,7 @@ Blockly.Blocks.nHRGZf={
 };
 
 
-Blockly.Blocks.FQZvmf={
+Blockly.Blocks["FQZvmf"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('给模型');
@@ -198,7 +198,7 @@ Blockly.Blocks.FQZvmf={
 
 
 
-Blockly.Blocks.iRYMFW={
+Blockly.Blocks["iRYMFW"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('赋值');
@@ -211,7 +211,7 @@ Blockly.Blocks.iRYMFW={
   },
 };
 
-Blockly.Blocks.hTTyeJ={
+Blockly.Blocks["hTTyeJ"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('存放模型的文件夹里面存在的模型名字');
@@ -221,7 +221,7 @@ Blockly.Blocks.hTTyeJ={
 };
 
 
-Blockly.Blocks.VZynUA={
+Blockly.Blocks["VZynUA"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置决策树或随机森林');
@@ -234,7 +234,7 @@ Blockly.Blocks.VZynUA={
   },
 };
 
-Blockly.Blocks.a_cqdC={
+Blockly.Blocks["a_cqdC"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置决策树或随机森林');
@@ -248,7 +248,7 @@ Blockly.Blocks.a_cqdC={
   },
 };
 
-Blockly.Blocks.e_bHjD={
+Blockly.Blocks["e_bHjD"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置决策树或随机森林');
@@ -261,7 +261,7 @@ Blockly.Blocks.e_bHjD={
   },
 };
 
-Blockly.Blocks.URZFxg={
+Blockly.Blocks["URZFxg"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置决策树或随机森林');
@@ -274,7 +274,7 @@ Blockly.Blocks.URZFxg={
   },
 };
 
-Blockly.Blocks.bUfoAo={
+Blockly.Blocks["bUfoAo"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置随机森林');
@@ -287,7 +287,7 @@ Blockly.Blocks.bUfoAo={
   },
 };
 
-// Blockly.Blocks.XQLwTZ={
+// Blockly.Blocks["XQLwTZ"]={
 //   init: function () {
 //   this.setColour(50);
 //   this.appendDummyInput().appendField('设置k近邻');
@@ -300,7 +300,7 @@ Blockly.Blocks.bUfoAo={
 //   },
 // };
 
-Blockly.Blocks.JjHvot={
+Blockly.Blocks["JjHvot"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置');
@@ -313,7 +313,7 @@ Blockly.Blocks.JjHvot={
   },
 };
 
-Blockly.Blocks.MDtUTa={
+Blockly.Blocks["MDtUTa"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置神经网络');
@@ -326,7 +326,7 @@ Blockly.Blocks.MDtUTa={
   },
 };
 
-Blockly.Blocks.cxWWzN={
+Blockly.Blocks["cxWWzN"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置神经网络');
@@ -339,7 +339,7 @@ Blockly.Blocks.cxWWzN={
   },
 };
 
-Blockly.Blocks.fHvBNC={
+Blockly.Blocks["fHvBNC"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置支持向量机、神经网络模型');
@@ -352,7 +352,7 @@ Blockly.Blocks.fHvBNC={
   },
 };
 
-Blockly.Blocks.GMwzOs={
+Blockly.Blocks["GMwzOs"]={
   init: function () {
   this.setColour(50);
   this.appendDummyInput().appendField('设置神经网络');

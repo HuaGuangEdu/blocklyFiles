@@ -11,7 +11,7 @@
 'use strict';
 
 
-Blockly.Python.text_lianjie = function() {
+Blockly.Python["text_lianjie"] = function() {
   // Text value.
     var a = Blockly.Python.valueToCode(this, 'A_l', Blockly.Python.ORDER_ATOMIC);
     var b = Blockly.Python.valueToCode(this, 'B_l', Blockly.Python.ORDER_ATOMIC);
@@ -19,21 +19,21 @@ Blockly.Python.text_lianjie = function() {
     return [code , Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.text_str2num = function() {
+Blockly.Python["text_str2num"] = function() {
   // Text value.
     var str2num = Blockly.Python.valueToCode(this, 'str2num', Blockly.Python.ORDER_ATOMIC);
     var code='int(' + str2num+')' ;
     return [code , Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.text_num2str = function() {
+Blockly.Python["text_num2str"] = function() {
   // Text value.
     var num2str = Blockly.Python.valueToCode(this, 'num2str', Blockly.Python.ORDER_ATOMIC);
     var code='str(' + num2str+')' ;
     return [code , Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.text_zhushi = function() {
+Blockly.Python["text_zhushi"] = function() {
   // Text value.
     var zhushi = Blockly.Python.valueToCode(this, 'zhushi', Blockly.Python.ORDER_ATOMIC);
     var code='#' + zhushi+'\n' ;

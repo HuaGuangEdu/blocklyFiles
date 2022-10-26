@@ -1,7 +1,7 @@
 'use strict';
 //图元 a = shijue1.Img()
 //图元 a.camera(0)
-Blockly.Blocks.camera = {
+Blockly.Blocks["camera"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('cam_name')
@@ -19,7 +19,7 @@ Blockly.Blocks.camera = {
 };
 
 //图元 close_camera()
-Blockly.Blocks.camera_close = {
+Blockly.Blocks["camera_close"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('cam_name_1')
@@ -34,7 +34,7 @@ Blockly.Blocks.camera_close = {
 };
 
 //图元 a.get_img()
-Blockly.Blocks.camera_get = {
+Blockly.Blocks["camera_get"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -48,7 +48,7 @@ Blockly.Blocks.camera_get = {
 
 
 //图元Type
-Blockly.Blocks.Type = {
+Blockly.Blocks["Type"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -61,7 +61,7 @@ Blockly.Blocks.Type = {
 };
 
 //图元write_image
-Blockly.Blocks.write_image = {
+Blockly.Blocks["write_image"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -77,7 +77,7 @@ Blockly.Blocks.write_image = {
 };
 
 //图元 pic_read()
-Blockly.Blocks.camera_get_path = {
+Blockly.Blocks["camera_get_path"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img_f')
@@ -94,7 +94,7 @@ Blockly.Blocks.camera_get_path = {
 };
 
 //图元 name_windows('img')
-Blockly.Blocks.img_windows = {
+Blockly.Blocks["img_windows"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -112,7 +112,7 @@ Blockly.Blocks.img_windows = {
 };
 
 //图元 show_image('img')
-Blockly.Blocks.img_windows_show = {
+Blockly.Blocks["img_windows_show"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -130,7 +130,7 @@ Blockly.Blocks.img_windows_show = {
 };
 
 //图元 delay(1)
-Blockly.Blocks.img_windows_delay = {
+Blockly.Blocks["img_windows_delay"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -149,7 +149,7 @@ Blockly.Blocks.img_windows_delay = {
 
 
 //图元 resize()
-Blockly.Blocks.img_res = {
+Blockly.Blocks["img_res"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img_r')
@@ -170,7 +170,7 @@ Blockly.Blocks.img_res = {
 };
 
 //图元BGR2GRAY
-Blockly.Blocks.BGR2GRAY = {
+Blockly.Blocks["BGR2GRAY"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -184,7 +184,7 @@ Blockly.Blocks.BGR2GRAY = {
 };
 
 //图元GRAY2BIN
-Blockly.Blocks.GRAY2BIN = {
+Blockly.Blocks["GRAY2BIN"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -198,7 +198,7 @@ Blockly.Blocks.GRAY2BIN = {
 };
 
 //图元 erosion dilation
-Blockly.Blocks.img_hsv_erode = {
+Blockly.Blocks["img_hsv_erode"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -224,7 +224,7 @@ Blockly.Blocks.img_hsv_erode = {
 };
 
 //图元find_Counters
-Blockly.Blocks.qDDiBe={
+Blockly.Blocks["qDDiBe"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -236,7 +236,7 @@ Blockly.Blocks.qDDiBe={
 };
 
 // 图元 model_('number.proto') predict_init('yaml')
-Blockly.Blocks.change_ID = {
+Blockly.Blocks["change_ID"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -252,7 +252,7 @@ Blockly.Blocks.change_ID = {
   }
 };
 
-Blockly.Blocks.get_data = {
+Blockly.Blocks["get_data"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -272,7 +272,7 @@ Blockly.Blocks.get_data = {
   }
 };
 
-Blockly.Blocks.train = {
+Blockly.Blocks["train"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -286,7 +286,7 @@ Blockly.Blocks.train = {
   }
 };
 
-Blockly.Blocks.detector = {
+Blockly.Blocks["detector"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -306,7 +306,7 @@ Blockly.Blocks.detector = {
   }
 };
 
-Blockly.Blocks.hardware_raspberrypi_hsvdetect = {
+Blockly.Blocks["hardware_raspberrypi_hsvdetect"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('dec')
@@ -327,7 +327,7 @@ Blockly.Blocks.hardware_raspberrypi_hsvdetect = {
   }
 };
 
-Blockly.Blocks.detector_begin = {
+Blockly.Blocks["detector_begin"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -341,7 +341,7 @@ Blockly.Blocks.detector_begin = {
   }
 };
 
-Blockly.Blocks.detector_result = {
+Blockly.Blocks["detector_result"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -354,7 +354,7 @@ Blockly.Blocks.detector_result = {
   }
 };
 
-Blockly.Blocks.QR_Code_begin = {
+Blockly.Blocks["QR_Code_begin"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -368,7 +368,7 @@ Blockly.Blocks.QR_Code_begin = {
   }
 };
 
-Blockly.Blocks.QR_Code_result = {
+Blockly.Blocks["QR_Code_result"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -381,7 +381,7 @@ Blockly.Blocks.QR_Code_result = {
   }
 };
 
-Blockly.Blocks.beauty_face = {
+Blockly.Blocks["beauty_face"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -397,7 +397,7 @@ Blockly.Blocks.beauty_face = {
 
 
 //图元close_windows
-Blockly.Blocks.close_windows = {
+Blockly.Blocks["close_windows"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -411,7 +411,7 @@ Blockly.Blocks.close_windows = {
 };
 
 //图元extract_color
-Blockly.Blocks.extract_color = {
+Blockly.Blocks["extract_color"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -431,7 +431,7 @@ Blockly.Blocks.extract_color = {
 
 
 //图元offset_calculate1
-Blockly.Blocks.offset_calculate1 = {
+Blockly.Blocks["offset_calculate1"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -442,7 +442,7 @@ Blockly.Blocks.offset_calculate1 = {
 };
 
 //图元cnt_area
-Blockly.Blocks.cnt_area = {
+Blockly.Blocks["cnt_area"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -455,7 +455,7 @@ Blockly.Blocks.cnt_area = {
 };
 
 //图元cnt_draw
-Blockly.Blocks.cnt_draw = {
+Blockly.Blocks["cnt_draw"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -470,7 +470,7 @@ Blockly.Blocks.cnt_draw = {
 };
 
 //图元bin_detect
-Blockly.Blocks.bin_detect = {
+Blockly.Blocks["bin_detect"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -481,7 +481,7 @@ Blockly.Blocks.bin_detect = {
 };
 
 //图元offset_calculate2
-Blockly.Blocks.offset_calculate2 = {
+Blockly.Blocks["offset_calculate2"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -492,7 +492,7 @@ Blockly.Blocks.offset_calculate2 = {
 };
 
 //图元detect
-Blockly.Blocks.detect = {
+Blockly.Blocks["detect"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -505,7 +505,7 @@ Blockly.Blocks.detect = {
 };
 
 //图元cnt_center
-Blockly.Blocks.cnt_center = {
+Blockly.Blocks["cnt_center"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('img').setCheck('var');
@@ -518,7 +518,7 @@ Blockly.Blocks.cnt_center = {
 };
 
 // 图元finger_init
-Blockly.Blocks.finger_init = {
+Blockly.Blocks["finger_init"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -533,7 +533,7 @@ Blockly.Blocks.finger_init = {
 };
 
 // 图元finger_distance
-Blockly.Blocks.finger_distance = {
+Blockly.Blocks["finger_distance"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -558,7 +558,7 @@ Blockly.Blocks.finger_distance = {
 };
 
 // 图元body_init
-Blockly.Blocks.body_init = {
+Blockly.Blocks["body_init"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -573,7 +573,7 @@ Blockly.Blocks.body_init = {
 };
 
 // 图元body_part_x
-Blockly.Blocks.wrist_mark = {
+Blockly.Blocks["wrist_mark"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -597,7 +597,7 @@ Blockly.Blocks.wrist_mark = {
 
 
 // 图元body_part_distance
-Blockly.Blocks.body_part_distance = {
+Blockly.Blocks["body_part_distance"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -622,7 +622,7 @@ Blockly.Blocks.body_part_distance = {
 };
 
 // 图元get_shape
-Blockly.Blocks.get_shape = {
+Blockly.Blocks["get_shape"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
@@ -640,7 +640,7 @@ Blockly.Blocks.get_shape = {
   }
 };
 
-Blockly.Blocks.nQLZEX={
+Blockly.Blocks["nQLZEX"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -656,7 +656,7 @@ Blockly.Blocks.nQLZEX={
 
 
 
-Blockly.Blocks.Uggrib={
+Blockly.Blocks["Uggrib"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -670,7 +670,7 @@ Blockly.Blocks.Uggrib={
   },
 };
 
-Blockly.Blocks.UmOSBk={
+Blockly.Blocks["UmOSBk"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -681,7 +681,7 @@ Blockly.Blocks.UmOSBk={
   },
 };
 
-Blockly.Blocks._hzkiF={
+Blockly.Blocks["_hzkiF"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -692,7 +692,7 @@ Blockly.Blocks._hzkiF={
 };
 
 
-Blockly.Blocks.qemBSP={
+Blockly.Blocks["qemBSP"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -703,7 +703,7 @@ Blockly.Blocks.qemBSP={
 };
 
 
-Blockly.Blocks.EFFxHX={
+Blockly.Blocks["EFFxHX"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -714,7 +714,7 @@ Blockly.Blocks.EFFxHX={
 };
 
 
-Blockly.Blocks.wyIxPg={
+Blockly.Blocks["wyIxPg"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -725,7 +725,7 @@ Blockly.Blocks.wyIxPg={
 };
 
 
-Blockly.Blocks.QNYiXc={
+Blockly.Blocks["QNYiXc"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -736,7 +736,7 @@ Blockly.Blocks.QNYiXc={
 };
 
 
-Blockly.Blocks.JULPwO={
+Blockly.Blocks["JULPwO"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -747,7 +747,7 @@ Blockly.Blocks.JULPwO={
   },
 };
 
-Blockly.Blocks.TFpGo_={
+Blockly.Blocks["TFpGo_"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -758,7 +758,7 @@ Blockly.Blocks.TFpGo_={
   },
 };
 
-Blockly.Blocks.UWCuPc={
+Blockly.Blocks["UWCuPc"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -769,7 +769,7 @@ Blockly.Blocks.UWCuPc={
 };
 
 
-Blockly.Blocks.dI_sLk={
+Blockly.Blocks["dI_sLk"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -783,7 +783,7 @@ Blockly.Blocks.dI_sLk={
   },
 };
 
-Blockly.Blocks.MgGyws={
+Blockly.Blocks["MgGyws"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -795,7 +795,7 @@ Blockly.Blocks.MgGyws={
   },
 };
 
-Blockly.Blocks.Rkvtnk={
+Blockly.Blocks["Rkvtnk"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -806,7 +806,7 @@ Blockly.Blocks.Rkvtnk={
   },
 };
 
-Blockly.Blocks.iiZx_B={
+Blockly.Blocks["iiZx_B"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -817,7 +817,7 @@ Blockly.Blocks.iiZx_B={
   },
 };
 
-Blockly.Blocks.lCSYXR={
+Blockly.Blocks["lCSYXR"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -830,7 +830,7 @@ Blockly.Blocks.lCSYXR={
 
 
 
-Blockly.Blocks.QewIlI={
+Blockly.Blocks["QewIlI"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -841,7 +841,7 @@ Blockly.Blocks.QewIlI={
   },
 };
 
-Blockly.Blocks.EAHsF_={
+Blockly.Blocks["EAHsF_"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -853,7 +853,7 @@ Blockly.Blocks.EAHsF_={
   },
 };
 
-Blockly.Blocks.bOmQLt={
+Blockly.Blocks["bOmQLt"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -864,7 +864,7 @@ Blockly.Blocks.bOmQLt={
   },
 };
 
-Blockly.Blocks._fUgLI={
+Blockly.Blocks["_fUgLI"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -875,7 +875,7 @@ Blockly.Blocks._fUgLI={
   },
 };
 
-Blockly.Blocks.XvJcpG={
+Blockly.Blocks["XvJcpG"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -886,7 +886,7 @@ Blockly.Blocks.XvJcpG={
   },
 };
 
-Blockly.Blocks.AGVzJy={
+Blockly.Blocks["AGVzJy"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -897,7 +897,7 @@ Blockly.Blocks.AGVzJy={
   },
 };
 
-Blockly.Blocks.hdhyBZ={
+Blockly.Blocks["hdhyBZ"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -909,7 +909,7 @@ Blockly.Blocks.hdhyBZ={
   },
 };
 
-Blockly.Blocks.XjyuJQ={
+Blockly.Blocks["XjyuJQ"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -920,7 +920,7 @@ Blockly.Blocks.XjyuJQ={
   },
 };
 
-Blockly.Blocks.YONlOm={
+Blockly.Blocks["YONlOm"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -931,7 +931,7 @@ Blockly.Blocks.YONlOm={
 };
 
 
-Blockly.Blocks.dYJgsS={
+Blockly.Blocks["dYJgsS"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -942,7 +942,7 @@ Blockly.Blocks.dYJgsS={
 };
 
 
-Blockly.Blocks.omjURX={
+Blockly.Blocks["omjURX"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');
@@ -953,7 +953,7 @@ Blockly.Blocks.omjURX={
 };
 
 
-Blockly.Blocks.OCGUTW={
+Blockly.Blocks["OCGUTW"]={
   init: function () {
   this.setColour(200);
   this.appendValueInput('a').setCheck('var');

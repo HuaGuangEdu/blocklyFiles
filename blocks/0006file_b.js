@@ -1,40 +1,40 @@
 'use strict';
 
-Blockly.Blocks.open_file={
-init: function () {
-    this.setColour('#6cabde');
-    this.appendDummyInput()
-      .appendField('赋值');
-    this.appendValueInput('f')
-      .setCheck('var');
-    this.appendValueInput('filename',String)
-      .appendField('为文件')
-      .setCheck("String");
+Blockly.Blocks["open_file"]={
+  init: function () 
+  {
+      this.setColour('#6cabde');
+      this.appendDummyInput()
+        .appendField('赋值');
+      this.appendValueInput('f')
+        .setCheck('var');
+      this.appendValueInput('filename',String)
+        .appendField('为文件')
       this.appendDummyInput()
       .appendField('打开方式为');
-     var mode1 = [['只读', "'r'"], ['只写', "'w'"], ['追加', "'a'"]];
-     this.appendDummyInput("")
-            .appendField(new Blockly.FieldDropdown(mode1), 'DIR');
+      var mode1 = [['只读', "'r'"], ['只写', "'w'"], ['追加', "'a'"]];
+      this.appendDummyInput("")
+              .appendField(new Blockly.FieldDropdown(mode1), 'DIR');
+      this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+    }
+};
+
+Blockly.Blocks["close_file"]={
+  init: function(){
+    this.setColour('#6cabde');
+    this.appendDummyInput()
+      .appendField('关闭文件');
+    this.appendValueInput('f')
+    .setCheck('var');
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
   }
 };
 
-Blockly.Blocks.close_file={
-init: function(){
-    this.setColour('#6cabde');
-    this.appendDummyInput()
-      .appendField('关闭文件');
-     this.appendValueInput('f')
-     .setCheck('var');
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-}
-};
-
-Blockly.Blocks.file_read={
+Blockly.Blocks["file_read"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -48,7 +48,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.file_readline={
+Blockly.Blocks["file_readline"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -62,7 +62,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.file_readlines={
+Blockly.Blocks["file_readlines"]={
 init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -81,7 +81,7 @@ init: function() {
   }
 };
 
-Blockly.Blocks.file_GiveValue={
+Blockly.Blocks["file_GiveValue"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -96,7 +96,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.BackToFirst={
+Blockly.Blocks["BackToFirst"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendValueInput('f')
@@ -109,7 +109,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.file_write={
+Blockly.Blocks["file_write"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -126,7 +126,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.file_write2={
+Blockly.Blocks["file_write2"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -143,7 +143,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.open_json={
+Blockly.Blocks["open_json"]={
 init: function () {
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -164,7 +164,7 @@ init: function () {
   }
 };
 
-Blockly.Blocks.json_read={
+Blockly.Blocks["json_read"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -178,7 +178,7 @@ init:function(){
 }
 };
 
-Blockly.Blocks.json_write={
+Blockly.Blocks["json_write"]={
 init:function(){
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -197,7 +197,7 @@ init:function(){
 
 
 
-Blockly.Blocks.open_csv={
+Blockly.Blocks["open_csv"]={
 init: function () {
     this.setColour('#6cabde');
     this.appendDummyInput()
@@ -214,7 +214,7 @@ init: function () {
 };
 
 
-Blockly.Blocks.print_head = {
+Blockly.Blocks["print_head"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -234,7 +234,7 @@ Blockly.Blocks.print_head = {
   }
 };
 
-Blockly.Blocks.print_tail = {
+Blockly.Blocks["print_tail"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -254,7 +254,7 @@ Blockly.Blocks.print_tail = {
   }
 };
 
-Blockly.Blocks.print_describe = {
+Blockly.Blocks["print_describe"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -268,7 +268,7 @@ Blockly.Blocks.print_describe = {
   }
 };
 
-Blockly.Blocks.get_a_row = {
+Blockly.Blocks["get_a_row"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -287,7 +287,7 @@ Blockly.Blocks.get_a_row = {
   }
 };
 
-Blockly.Blocks.get_a_column = {
+Blockly.Blocks["get_a_column"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -306,7 +306,7 @@ Blockly.Blocks.get_a_column = {
   }
 };
 
-Blockly.Blocks.dropna = {
+Blockly.Blocks["dropna"] = {
   init: function() {
     this.appendValueInput("f")
         .setCheck("var")
@@ -322,7 +322,7 @@ Blockly.Blocks.dropna = {
 
 
 
-Blockly.Blocks.fillna= {
+Blockly.Blocks["fillna"]= {
   init: function () {
     this.setColour('#6cabde');
     this.appendValueInput("x")
@@ -339,7 +339,7 @@ Blockly.Blocks.fillna= {
   }
 };
 
-Blockly.Blocks.get_directory={
+Blockly.Blocks["get_directory"]={
    init: function () {
     this.setColour('#6cabde');
     this.appendDummyInput()

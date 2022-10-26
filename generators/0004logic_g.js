@@ -1,6 +1,6 @@
 'use strict';
 
-Blockly.Python.logic_is_in = function() {
+Blockly.Python["logic_is_in"] = function() {
   var a = Blockly.Python.valueToCode(this, 'A_in',Blockly.Python.ORDER_ATOMIC);
   var b = Blockly.Python.valueToCode(this, 'B_in',Blockly.Python.ORDER_ATOMIC);
   var code=a+' in '+b;

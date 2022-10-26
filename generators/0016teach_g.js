@@ -4,7 +4,7 @@
 
 
 //图元io
-Blockly.Python.io= function () {
+Blockly.Python["io"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.Io('+num+')\n';
@@ -14,7 +14,7 @@ Blockly.Python.io= function () {
 
 
 //图元setinout
-Blockly.Python.setinout= function () {
+Blockly.Python["setinout"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var mode = this.getFieldValue('DIR');
@@ -23,7 +23,7 @@ Blockly.Python.setinout= function () {
 };
 
 //图元setioout
-Blockly.Python.setioout= function () {
+Blockly.Python["setioout"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var mode = this.getFieldValue('DIR');
@@ -35,7 +35,7 @@ Blockly.Python.setioout= function () {
 
 
 //图元getioin
-Blockly.Python.getioin= function () {
+Blockly.Python["getioin"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var code = i+'.get_io_in()\n';
@@ -45,7 +45,7 @@ Blockly.Python.getioin= function () {
 
 
 //图元ioin
-Blockly.Python.__ioin= function () {
+Blockly.Python["__ioin"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var code = i+'.ioin';
@@ -54,7 +54,7 @@ Blockly.Python.__ioin= function () {
 
 
 //图元cleanio
-Blockly.Python.cleanio= function () {
+Blockly.Python["cleanio"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var code = i+'.clean_io()\n';
@@ -63,7 +63,7 @@ Blockly.Python.cleanio= function () {
 
 
 //图元io_pwm
-Blockly.Python.io_pwm= function () {
+Blockly.Python["io_pwm"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.IoToPwm('+num+')\n';
@@ -72,7 +72,7 @@ Blockly.Python.io_pwm= function () {
 
 
 //图元pwm_start
-Blockly.Python.pwm_start= function () {
+Blockly.Python["pwm_start"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var p =Blockly.Python.valueToCode(this, 'p', Blockly.Python.ORDER_ATOMIC);
     var code = p+'.start()\n';
@@ -81,7 +81,7 @@ Blockly.Python.pwm_start= function () {
 
 
 //图元setfreq
-Blockly.Python.setfreq= function () {
+Blockly.Python["setfreq"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var p =Blockly.Python.valueToCode(this, 'p', Blockly.Python.ORDER_ATOMIC);
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
@@ -91,7 +91,7 @@ Blockly.Python.setfreq= function () {
 
 
 //图元setduty
-Blockly.Python.setduty= function () {
+Blockly.Python["setduty"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var p =Blockly.Python.valueToCode(this, 'p', Blockly.Python.ORDER_ATOMIC);
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
@@ -101,7 +101,7 @@ Blockly.Python.setduty= function () {
 
 
 //图元pwm_end
-Blockly.Python.pwm_end= function () {
+Blockly.Python["pwm_end"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var p =Blockly.Python.valueToCode(this, 'p', Blockly.Python.ORDER_ATOMIC);
     var code = p+'.end()\n';
@@ -110,7 +110,7 @@ Blockly.Python.pwm_end= function () {
 
 
 // 图元 蜂鸣器
-Blockly.Python.beep= function () {
+Blockly.Python["beep"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.Beep('+num+')\n';
@@ -118,7 +118,7 @@ Blockly.Python.beep= function () {
 };
 
 
-Blockly.Python.open_b= function () {
+Blockly.Python["open_b"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var b =Blockly.Python.valueToCode(this, 'b', Blockly.Python.ORDER_ATOMIC);
     var mode = this.getFieldValue('DIR');
@@ -130,7 +130,7 @@ Blockly.Python.open_b= function () {
 };
 
 
-Blockly.Python.beep_s= function () {
+Blockly.Python["beep_s"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var b =Blockly.Python.valueToCode(this, 'b', Blockly.Python.ORDER_ATOMIC);
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
@@ -140,7 +140,7 @@ Blockly.Python.beep_s= function () {
 
 
 // 图元 Led
-Blockly.Python.led= function () {
+Blockly.Python["led"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.Led('+num+')\n';
@@ -148,7 +148,7 @@ Blockly.Python.led= function () {
 };
 
 
-Blockly.Python.closeled= function () {
+Blockly.Python["closeled"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var led =Blockly.Python.valueToCode(this, 'led', Blockly.Python.ORDER_ATOMIC);
     var mode = this.getFieldValue('DIR');
@@ -161,7 +161,7 @@ Blockly.Python.closeled= function () {
 
 
 //图元 温湿度
-Blockly.Python.tmp_hum= function () {
+Blockly.Python["tmp_hum"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var t_num =Blockly.Python.valueToCode(this, 't_num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.TempHump('+t_num+')\n';
@@ -171,7 +171,7 @@ Blockly.Python.tmp_hum= function () {
 
 
 
-Blockly.Python.getTemp_Humi= function () {
+Blockly.Python["getTemp_Humi"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var tem =Blockly.Python.valueToCode(this, 'tem', Blockly.Python.ORDER_ATOMIC);
     var code = tem+'.getTemp_Humi()\n';
@@ -179,7 +179,7 @@ Blockly.Python.getTemp_Humi= function () {
 };
 
 
-Blockly.Python.t_humi= function () {
+Blockly.Python["t_humi"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var tem =Blockly.Python.valueToCode(this, 'tem', Blockly.Python.ORDER_ATOMIC);
     var code = tem+'.humi';
@@ -187,7 +187,7 @@ Blockly.Python.t_humi= function () {
 };
 
 
-Blockly.Python.t_temp= function () {
+Blockly.Python["t_temp"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var tem =Blockly.Python.valueToCode(this, 'tem', Blockly.Python.ORDER_ATOMIC);
     var code = tem+'.temp';
@@ -196,7 +196,7 @@ Blockly.Python.t_temp= function () {
 
 
 // 图元 红外
-Blockly.Python.hongwai= function () {
+Blockly.Python["hongwai"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.HongWai('+num+')\n';
@@ -204,7 +204,7 @@ Blockly.Python.hongwai= function () {
 };
 
 
-Blockly.Python.getOcclusion= function () {
+Blockly.Python["getOcclusion"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var code = i +'.get_return()\n';
@@ -212,7 +212,7 @@ Blockly.Python.getOcclusion= function () {
 };
 
 
-Blockly.Python.ioin= function () {
+Blockly.Python["ioin"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var i =Blockly.Python.valueToCode(this, 'i', Blockly.Python.ORDER_ATOMIC);
     var code = i+'.data';
@@ -220,7 +220,7 @@ Blockly.Python.ioin= function () {
 };
 
 
-Blockly.Python.servo= function () {
+Blockly.Python["servo"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.Servo('+num+')\n';
@@ -228,7 +228,7 @@ Blockly.Python.servo= function () {
 };
 
 
-Blockly.Python.initial_servo = function() {
+Blockly.Python["initial_servo"] = function() {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var servo =Blockly.Python.valueToCode(this, 'servo', Blockly.Python.ORDER_ATOMIC);
     var code = servo + '.init_servo()\n';
@@ -236,14 +236,14 @@ Blockly.Python.initial_servo = function() {
 };
 
 //图元motor
-Blockly.Python.motor= function () {
+Blockly.Python["motor"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.motor('+num+')\n';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.motor_single= function () {
+Blockly.Python["motor_single"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var motor =Blockly.Python.valueToCode(this, 'motor', Blockly.Python.ORDER_ATOMIC);
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
@@ -257,14 +257,14 @@ Blockly.Python.motor_single= function () {
 
 
 //图元 超声波
-Blockly.Python.csb_= function () {
+Blockly.Python["csb_"]= function () {
     Blockly.Python.definitions_['control'] = 'from control import gpio';
     var num =Blockly.Python.valueToCode(this, 'num', Blockly.Python.ORDER_ATOMIC);
     var code = 'gpio.CSB('+num+')';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.csb_get_distance= function () {
+Blockly.Python["csb_get_distance"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var M =Blockly.Python.valueToCode(this, 'M', Blockly.Python.ORDER_ATOMIC);
     var code = M+'.get_distance()\n';
@@ -272,21 +272,21 @@ Blockly.Python.csb_get_distance= function () {
 };
 
 
-Blockly.Python.csb_distance= function () {
+Blockly.Python["csb_distance"]= function () {
     Blockly.Python.definitions_['control'] = 'from control import gpio';
     var M =Blockly.Python.valueToCode(this, 'M', Blockly.Python.ORDER_ATOMIC);
     var code = M+'.dis';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.driverless_car_raspberrypi_macanum_wheel_connect= function () {
+Blockly.Python["driverless_car_raspberrypi_macanum_wheel_connect"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
      var b =Blockly.Python.valueToCode(this, 'b', Blockly.Python.ORDER_ATOMIC);
      var code = b+'=gpio.Mecanum_wheel()\n'+b+'.uart_init()\n';
      return code;
 };
 
-Blockly.Python.driverless_car_raspberrypi_car_move= function () {
+Blockly.Python["driverless_car_raspberrypi_car_move"]= function () {
      Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
      var b = Blockly.Python.valueToCode(this, 'car_m', Blockly.Python.ORDER_ATOMIC);
      var speed = Blockly.Python.valueToCode(this, 'speed', Blockly.Python.ORDER_ATOMIC);
@@ -296,7 +296,7 @@ Blockly.Python.driverless_car_raspberrypi_car_move= function () {
      return code;
 };
 
-Blockly.Python.driverless_car_raspberrypi_car_circle= function () {
+Blockly.Python["driverless_car_raspberrypi_car_circle"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var b = Blockly.Python.valueToCode(this, 'car_m', Blockly.Python.ORDER_ATOMIC);
     var speed = Blockly.Python.valueToCode(this, 'speed', Blockly.Python.ORDER_ATOMIC);
@@ -306,7 +306,7 @@ Blockly.Python.driverless_car_raspberrypi_car_circle= function () {
     return code;
 };
 
-Blockly.Python.driverless_car_raspberrypi_car_stop= function () {
+Blockly.Python["driverless_car_raspberrypi_car_stop"]= function () {
     Blockly.Python.definitions_['control_gpio'] = 'from control import gpio';
     var b =Blockly.Python.valueToCode(this, 'b', Blockly.Python.ORDER_ATOMIC);
     var code = b+'.car_stop()'+'\n';
@@ -315,7 +315,7 @@ Blockly.Python.driverless_car_raspberrypi_car_stop= function () {
 
 
 
-Blockly.Python.GUuKXc= function () {
+Blockly.Python["GUuKXc"]= function () {
   Blockly.Python.definitions_['control_gpio']='from control import gpio';
  var servo=Blockly.Python.valueToCode(this,'servo',Blockly.Python.ORDER_ATOMIC);
   var MODE1=this.getFieldValue('MODE1');
@@ -325,12 +325,12 @@ var NUM2=Blockly.Python.valueToCode(this,'NUM2',Blockly.Python.ORDER_ATOMIC);
  return code;
 };
 
-Blockly.Python.ZesoGg= function () {
+Blockly.Python["ZesoGg"]= function () {
   Blockly.Python.definitions_['control_gpio']='from control import gpio';
  var code='gpio.Servo(0)'+'\n';
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
-Blockly.Python.ZesoGg= function () {
+Blockly.Python["ZesoGg"]= function () {
   Blockly.Python.definitions_['control_gpio']='from control import gpio';
  var code='gpio.Servo(0)'+'\n';
  return [code, Blockly.Python.ORDER_ATOMIC];

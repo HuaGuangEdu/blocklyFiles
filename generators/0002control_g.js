@@ -2,7 +2,7 @@
 
 
 
-Blockly.Python.base_setup = function () {
+Blockly.Python["base_setup"] = function () {
     var branch = Blockly.Python.statementToCode(this, 'DO');
     branch = branch.replace(/(^\s*)|(\s*$)/g, "").replace(/\n    /g, '\n');//去除两端空格
     if(branch.endsWith('\n')){
@@ -15,7 +15,7 @@ Blockly.Python.base_setup = function () {
 };
 
 //ok
-Blockly.Python.controls_if = function (a) {
+Blockly.Python["controls_if"] = function (a) {
     var b = 0,
     c = "",
     d,
@@ -27,7 +27,7 @@ Blockly.Python.controls_if = function (a) {
     return c
 };
 
-Blockly.Python.controls_try_finally = function () {
+Blockly.Python["controls_try_finally"] = function () {
     var n = 0;
     var argument = Blockly.Python.valueToCode(this, 'IF' + n,
         Blockly.Python.ORDER_NONE) || 'null';
@@ -51,7 +51,7 @@ Blockly.Python.controls_try_finally = function () {
 };
 
 //ok
-Blockly.Python.controls_for = function (a) {
+Blockly.Python["controls_for"] = function (a) {
     var b = Blockly.Python.variableDB_.getName(a.getFieldValue("VAR"), Blockly.Variables.NAME_TYPE),
     //var b = Blockly.Python.valueToCode(a, "VAR", Blockly.Python.ORDER_MEMBER) || "''",
     c = Blockly.Python.valueToCode(a, "FROM", Blockly.Python.ORDER_NONE) || "0",
@@ -94,7 +94,7 @@ Blockly.Python.controls_for = function (a) {
     return g += "for " + b + " in " + a + ":\n" + f
 };
 
-Blockly.Python.controls_for_range = function (block) {
+Blockly.Python["controls_for_range"] = function (block) {
     var iter = Blockly.Python.variableDB_.getName(block.getFieldValue("VAR"), Blockly.Variables.NAME_TYPE),
     from = Blockly.Python.valueToCode(block, "FROM", Blockly.Python.ORDER_NONE) || "0",
     end = Blockly.Python.valueToCode(block, "TO", Blockly.Python.ORDER_NONE) || "0",
@@ -109,7 +109,7 @@ Blockly.Python.controls_for_range = function (block) {
 
 //ok
 Blockly.Python.controls_repeat = Blockly.Python.controls_repeat_ext;
-Blockly.Python.controls_whileUntil = function (a) {
+Blockly.Python["controls_whileUntil"] = function (a) {
     var b = "UNTIL" == a.getFieldValue("MODE"),
     c = Blockly.Python.valueToCode(a, "BOOL", b ? Blockly.Python.ORDER_LOGICAL_NOT : Blockly.Python.ORDER_NONE) || "False",
     d = Blockly.Python.statementToCode(a, "DO"),
@@ -118,7 +118,7 @@ Blockly.Python.controls_whileUntil = function (a) {
     return "while " + c + ":\n" + d
 };
 
-// Blockly.Python.controls_flow_statements = function () {
+// Blockly.Python["controls_flow_statements"] = function () {
 //     // Flow statements: continue, break.
 //     switch (this.getFieldValue('FLOW')) {
 //         case 'BREAK':
@@ -130,7 +130,7 @@ Blockly.Python.controls_whileUntil = function (a) {
 // };
 
 //ok
-Blockly.Python.controls_flow_statements = function (a) {
+Blockly.Python["controls_flow_statements"] = function (a) {
     switch (a.getFieldValue("FLOW")) {
     case "BREAK":
         return "break\n";
@@ -141,34 +141,34 @@ Blockly.Python.controls_flow_statements = function (a) {
 };
 
 //ok
-Blockly.Python.controls_delay = function () {
+Blockly.Python["controls_delay"] = function () {
     var delay_time = Blockly.Python.valueToCode(this, 'DELAY_TIME', Blockly.Python.ORDER_ATOMIC) || '1000'
     var code = 'sleep(' + delay_time + ')\n';
     return code;
 };
 //ok
-Blockly.Python.Panic_with_status_code = function () {
+Blockly.Python["Panic_with_status_code"] = function () {
     var status_code = Blockly.Python.valueToCode(this, 'STATUS_CODE', Blockly.Python.ORDER_ATOMIC) || '1000'
     var code = 'panic(' + status_code + ')\n';
     return code;
 };
 //ok
-Blockly.Python.controls_millis = function () {
+Blockly.Python["controls_millis"] = function () {
     Blockly.Python.definitions_.import_time = "import time";
     var code = 'time.time()';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
 //ok
-Blockly.Python.reset = function () {
+Blockly.Python["reset"] = function () {
     Blockly.Python.definitions_['import_microbit'] = 'from microbit import *'
     return 'reset()\n';
 };
-Blockly.Python.controls_interrupts = function () {
+Blockly.Python["controls_interrupts"] = function () {
     return 'interrupts();\n';
 };
 
-Blockly.Python.controls_nointerrupts = function () {
+Blockly.Python["controls_nointerrupts"] = function () {
     return 'noInterrupts();\n';
 };
 
@@ -186,7 +186,7 @@ Blockly.Python['controls_forEach'] = function(block) {
 };
 
 
-Blockly.Python.controls_range = function () {
+Blockly.Python["controls_range"] = function () {
     var from = Blockly.Python.valueToCode(this, "FROM", Blockly.Python.ORDER_NONE) || "0";
     var end = Blockly.Python.valueToCode(this, "TO", Blockly.Python.ORDER_NONE) || "0";
     var step = Blockly.Python.valueToCode(this, "STEP", Blockly.Python.ORDER_NONE) || "1";
@@ -194,7 +194,7 @@ Blockly.Python.controls_range = function () {
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.controls_lambda = function (a) {
+Blockly.Python["controls_lambda"] = function (a) {
     var c = Blockly.Python.valueToCode(a, "BOOL", Blockly.Python.ORDER_NONE) || "None",
     d = Blockly.Python.statementToCode(a, "DO") || "pass";
     var code = "lambda " + c + ": " + d;
@@ -202,27 +202,27 @@ Blockly.Python.controls_lambda = function (a) {
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.time_sleep = function () {
+Blockly.Python["time_sleep"] = function () {
     Blockly.Python.definitions_['import_time'] = 'import time';
     var delay_time = Blockly.Python.valueToCode(this, 'DELAY_TIME', Blockly.Python.ORDER_ATOMIC) || '1000'
     var code = 'time.sleep(' + delay_time + ')\n';
     return code;
 };
 
-Blockly.Python.threading_create = function () {
+Blockly.Python["threading_create"] = function () {
     Blockly.Python.definitions_['import_threading'] = 'import threading';
     var hs = Blockly.Python.valueToCode(this,'hs', Blockly.Python.ORDER_ATOMIC)
     var code = 'threading.Thread(target=eval('+hs+'),args=())\n';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.threading_start = function () {
+Blockly.Python["threading_start"] = function () {
     Blockly.Python.definitions_['import_threading'] = 'import threading';
     var thread = Blockly.Python.valueToCode(this,'thread', Blockly.Python.ORDER_ATOMIC)
     var code = thread+'.start()\n';
     return code;
 };
-Blockly.Python.threading_join = function () {
+Blockly.Python["threading_join"] = function () {
     Blockly.Python.definitions_['import_threading'] = 'import threading';
     var thread_ = Blockly.Python.valueToCode(this,'thread_', Blockly.Python.ORDER_ATOMIC)
     var thread_time= Blockly.Python.valueToCode(this,'thread_time', Blockly.Python.ORDER_ATOMIC)
@@ -230,11 +230,11 @@ Blockly.Python.threading_join = function () {
     return code;
 };
 
-Blockly.Python.controls_pass = function () {
+Blockly.Python["controls_pass"] = function () {
     return 'pass\n';
 };
 
-Blockly.Python.controls_thread = function () {
+Blockly.Python["controls_thread"] = function () {
    Blockly.Python.definitions_['import__thread'] = 'import _thread';
     var v = Blockly.Python.valueToCode(this, "VAR", Blockly.Python.ORDER_NONE) || "None";
     var callback = Blockly.Python.valueToCode(this, "callback", Blockly.Python.ORDER_NONE) || "None";
@@ -245,19 +245,19 @@ Blockly.Python.controls_thread = function () {
 Blockly.Python.base_type=Blockly.Python.controls_type;
 Blockly.Python.controls_TypeLists=Blockly.Python.controls_typeLists;
 
-Blockly.Python.keyboard = function(){
+Blockly.Python["keyboard"] = function(){
     Blockly.Python.definitions_['import_pynput'] = 'from pynput import keyboard';
     return '';
 };
 
-Blockly.Python.anjian = function(){
+Blockly.Python["anjian"] = function(){
     Blockly.Python.definitions_['import_pynput'] = 'from pynput import keyboard';
     var on_press = Blockly.Python.valueToCode(this, 'on_press', Blockly.Python.ORDER_ATOMIC);
     var on_release = Blockly.Python.valueToCode(this, 'on_release', Blockly.Python.ORDER_ATOMIC);
     var code = 'with keyboard.Listener(on_press=eval(' + on_press + '),on_release=eval(' + on_release + ')) as listener: listener.join()\n';
     return code;
 };
-Blockly.Python.key_value = function(){
+Blockly.Python["key_value"] = function(){
     Blockly.Python.definitions_['import_pynput'] = 'from pynput import keyboard';
     var key = Blockly.Python.valueToCode(this, 'key', Blockly.Python.ORDER_ATOMIC);
     var code = key + '.char';

@@ -5,10 +5,10 @@
 Blockly.Blocks['inout_print'] = {
   init: function() {
     this.setColour(60);
-        this.appendValueInput("VAR")
-        .appendField("打印（自动换行）");
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
+    this.appendValueInput("VAR")
+    .appendField("打印（自动换行）");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
   }
 };
   

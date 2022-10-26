@@ -15,7 +15,7 @@
  */
 Blockly.Constants.Text.HUE = 160;
 
-Blockly.Blocks.text_lianjie = {
+Blockly.Blocks["text_lianjie"] = {
   init: function() {
     this.setColour(160);
     this.appendValueInput('A_l',String)
@@ -28,7 +28,7 @@ Blockly.Blocks.text_lianjie = {
   }
 };
 
-Blockly.Blocks.text_str2num = {
+Blockly.Blocks["text_str2num"] = {
   init: function() {
     this.setColour(160);
     this.appendValueInput('str2num',String)
@@ -40,7 +40,7 @@ Blockly.Blocks.text_str2num = {
   }
 };
 
-Blockly.Blocks.text_num2str = {
+Blockly.Blocks["text_num2str"] = {
   init: function() {
     this.setColour(160);
     this.appendValueInput('num2str',Number)
@@ -52,7 +52,7 @@ Blockly.Blocks.text_num2str = {
   }
 };
 
-Blockly.Blocks.text_zhushi = {
+Blockly.Blocks["text_zhushi"] = {
   init: function() {
     this.setColour(160);
      this.appendDummyInput()

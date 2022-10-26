@@ -3,7 +3,7 @@
 //colour = 0;
 
 //图元io
-Blockly.Blocks.io={
+Blockly.Blocks["io"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('num',Number)      .setCheck('Number');
@@ -18,7 +18,7 @@ Blockly.Blocks.io={
 
 
 //图元setinout
-Blockly.Blocks.setinout={
+Blockly.Blocks["setinout"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('i')
@@ -38,7 +38,7 @@ Blockly.Blocks.setinout={
 };
 
 //图元setioout
-Blockly.Blocks.setioout={
+Blockly.Blocks["setioout"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('i')
@@ -61,7 +61,7 @@ Blockly.Blocks.setioout={
 
 
 //图元getioin
-Blockly.Blocks.getioin={
+Blockly.Blocks["getioin"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('i')
@@ -77,7 +77,7 @@ Blockly.Blocks.getioin={
 
 
 //图元ioin
-Blockly.Blocks.__ioin={
+Blockly.Blocks["__ioin"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('i')
@@ -91,7 +91,7 @@ Blockly.Blocks.__ioin={
 
 
 //图元cleanio
-Blockly.Blocks.cleanio={
+Blockly.Blocks["cleanio"]={
   init: function () {
     this.setColour(0);
     this.appendDummyInput()
@@ -110,7 +110,7 @@ Blockly.Blocks.cleanio={
 
 
 //图元io_pwm
-Blockly.Blocks.io_pwm={
+Blockly.Blocks["io_pwm"]={
   init: function () {
     this.setColour(0);
     // this.appendDummyInput()
@@ -129,7 +129,7 @@ Blockly.Blocks.io_pwm={
 
 
 //图元pwm_start
-Blockly.Blocks.pwm_start={
+Blockly.Blocks["pwm_start"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('p')
@@ -144,7 +144,7 @@ Blockly.Blocks.pwm_start={
 
 
 //图元setfreq
-Blockly.Blocks.setfreq={
+Blockly.Blocks["setfreq"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('p')
@@ -160,7 +160,7 @@ Blockly.Blocks.setfreq={
 
 
 //图元setduty
-Blockly.Blocks.setduty={
+Blockly.Blocks["setduty"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('p')
@@ -176,7 +176,7 @@ Blockly.Blocks.setduty={
 
 
 //图元pwm_end
-Blockly.Blocks.pwm_end={
+Blockly.Blocks["pwm_end"]={
   init: function () {
     this.setColour(0);
     this.appendValueInput('p')
@@ -191,7 +191,7 @@ Blockly.Blocks.pwm_end={
 
 //color = 20;
 //图元beep
-Blockly.Blocks.beep={
+Blockly.Blocks["beep"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -214,7 +214,7 @@ Blockly.Blocks.beep={
 
 
 //图元open_b
-Blockly.Blocks.open_b={
+Blockly.Blocks["open_b"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('b')
@@ -233,7 +233,7 @@ Blockly.Blocks.open_b={
 
 
 //图元beep_s
-Blockly.Blocks.beep_s={
+Blockly.Blocks["beep_s"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('b')
@@ -251,7 +251,7 @@ Blockly.Blocks.beep_s={
 
 
 //图元led
-Blockly.Blocks.led={
+Blockly.Blocks["led"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -274,7 +274,7 @@ Blockly.Blocks.led={
 
 
 //图元closeled
-Blockly.Blocks.closeled={
+Blockly.Blocks["closeled"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('led')
@@ -293,7 +293,7 @@ Blockly.Blocks.closeled={
 
 
 //图元tmp_hum
-Blockly.Blocks.tmp_hum={
+Blockly.Blocks["tmp_hum"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -318,7 +318,7 @@ Blockly.Blocks.tmp_hum={
 
 
 //图元getTemp_Humi
-Blockly.Blocks.getTemp_Humi={
+Blockly.Blocks["getTemp_Humi"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('tem')
@@ -333,7 +333,7 @@ Blockly.Blocks.getTemp_Humi={
 
 
 //图元t_humi
-Blockly.Blocks.t_humi={
+Blockly.Blocks["t_humi"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('tem')
@@ -347,7 +347,7 @@ Blockly.Blocks.t_humi={
 
 
 //图元t_temp
-Blockly.Blocks.t_temp={
+Blockly.Blocks["t_temp"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('tem')
@@ -361,7 +361,7 @@ Blockly.Blocks.t_temp={
 
 
 //图元hongwai
-Blockly.Blocks.hongwai={
+Blockly.Blocks["hongwai"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -384,7 +384,7 @@ Blockly.Blocks.hongwai={
 
 
 //图元getOcclusion
-Blockly.Blocks.getOcclusion={
+Blockly.Blocks["getOcclusion"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('i')
@@ -399,7 +399,7 @@ Blockly.Blocks.getOcclusion={
 
 
 //图元ioin
-Blockly.Blocks.ioin={
+Blockly.Blocks["ioin"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('i')
@@ -412,7 +412,7 @@ Blockly.Blocks.ioin={
 };
 
 //图元servo
-Blockly.Blocks.servo={
+Blockly.Blocks["servo"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -435,7 +435,7 @@ Blockly.Blocks.servo={
 
 
 //图元setServoAngle
-Blockly.Blocks.initial_servo = {
+Blockly.Blocks["initial_servo"] = {
     init: function(){
     this.appendDummyInput()
         .appendField('初始化舵机')
@@ -450,7 +450,7 @@ Blockly.Blocks.initial_servo = {
 
 
 //图元motor
-Blockly.Blocks.motor={
+Blockly.Blocks["motor"]={
   init: function () {
     this.setColour(20);
     // this.appendDummyInput()
@@ -470,7 +470,7 @@ Blockly.Blocks.motor={
 };
 
 //motor_single
-Blockly.Blocks.motor_single={
+Blockly.Blocks["motor_single"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('motor')
@@ -493,7 +493,7 @@ Blockly.Blocks.motor_single={
 
 
 //图元csb_
-Blockly.Blocks.csb_={
+Blockly.Blocks["csb_"]={
   init: function () {
     this.setColour(20);
     this.appendValueInput('num',Number)
@@ -507,7 +507,7 @@ Blockly.Blocks.csb_={
 
 
 //图元csb_distance
-Blockly.Blocks.csb_get_distance={
+Blockly.Blocks["csb_get_distance"]={
   init: function () {
     this.setColour(20);
     this.appendDummyInput()
@@ -524,7 +524,7 @@ Blockly.Blocks.csb_get_distance={
 
 
 //图元csb_get_distance_one
-Blockly.Blocks.csb_distance={
+Blockly.Blocks["csb_distance"]={
   init: function () {
     this.setColour(20);
     this.appendDummyInput()
@@ -541,7 +541,7 @@ Blockly.Blocks.csb_distance={
 
 //color = 90;
 
-Blockly.Blocks.driverless_car_raspberrypi_macanum_wheel_connect = {
+Blockly.Blocks["driverless_car_raspberrypi_macanum_wheel_connect"] = {
   init: function () {
     this.setColour(20);
     this.appendDummyInput()
@@ -569,7 +569,7 @@ function onFirstComment(event) {
 var run_mode
 
 
-Blockly.Blocks.driverless_car_raspberrypi_car_move = {
+Blockly.Blocks["driverless_car_raspberrypi_car_move"] = {
 
   init: function () {
 
@@ -617,7 +617,7 @@ Blockly.Blocks.driverless_car_raspberrypi_car_move = {
 
 
 
-Blockly.Blocks.driverless_car_raspberrypi_car_circle = {
+Blockly.Blocks["driverless_car_raspberrypi_car_circle"] = {
   init: function () {
     this.setColour(20);
     this.appendDummyInput()
@@ -644,7 +644,7 @@ Blockly.Blocks.driverless_car_raspberrypi_car_circle = {
   }
 };
 
-Blockly.Blocks.driverless_car_raspberrypi_car_stop = {
+Blockly.Blocks["driverless_car_raspberrypi_car_stop"] = {
   init: function () {
     this.setColour(20);
     this.appendDummyInput()
@@ -661,7 +661,7 @@ Blockly.Blocks.driverless_car_raspberrypi_car_stop = {
 
 
 
-Blockly.Blocks.GUuKXc={
+Blockly.Blocks["GUuKXc"]={
   init: function () {
   this.setColour(20);
   this.appendValueInput('servo').setCheck('var');
@@ -679,7 +679,7 @@ Blockly.Blocks.GUuKXc={
   },
 };
 
-Blockly.Blocks.ZesoGg={
+Blockly.Blocks["ZesoGg"]={
   init: function () {
   this.setColour(20);
   this.appendValueInput('NUM1', Number).setCheck('Number');

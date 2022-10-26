@@ -1,6 +1,6 @@
 'use strict';
 
-Blockly.Python.hardware_raspberrypi_machine_learning_datasets = function () {
+Blockly.Python["hardware_raspberrypi_machine_learning_datasets"] = function () {
     Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
     var datasets = Blockly.Python.valueToCode(this, 'datasets', Blockly.Python.ORDER_ATOMIC);
     var dataset_name = this.getFieldValue('dataset_name');
@@ -8,32 +8,32 @@ Blockly.Python.hardware_raspberrypi_machine_learning_datasets = function () {
     return code;
 };
 
-Blockly.Python.datasets_return= function () {
+Blockly.Python["datasets_return"]= function () {
     Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
     var datasets =Blockly.Python.valueToCode(this, 'datasets', Blockly.Python.ORDER_ATOMIC);
     var code = datasets+".x_train"
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
-Blockly.Python.datasets_return1= function () {
+Blockly.Python["datasets_return1"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
   var datasets =Blockly.Python.valueToCode(this, 'datasets', Blockly.Python.ORDER_ATOMIC);
   var code = datasets+".y_train"
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
-Blockly.Python.datasets_return2= function () {
+Blockly.Python["datasets_return2"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
   var datasets =Blockly.Python.valueToCode(this, 'datasets', Blockly.Python.ORDER_ATOMIC);
   var code = datasets+".x_test"
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
-Blockly.Python.datasets_return3= function () {
+Blockly.Python["datasets_return3"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
   var datasets =Blockly.Python.valueToCode(this, 'datasets', Blockly.Python.ORDER_ATOMIC);
   var code = datasets+".y_test"
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.split_ret= function () {
+Blockly.Python["split_ret"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml'] = 'from control import machine_learning as ml';
  var datasets=Blockly.Python.valueToCode(this,'datasets',Blockly.Python.ORDER_ATOMIC);
   var split_num =Blockly.Python.valueToCode(this, 'split_num', Blockly.Python.ORDER_ATOMIC);
@@ -43,7 +43,7 @@ Blockly.Python.split_ret= function () {
 
 
 
-Blockly.Python.PHRumu= function () {
+Blockly.Python["PHRumu"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
   var model =Blockly.Python.valueToCode(this, 'model', Blockly.Python.ORDER_ATOMIC);
   var MODE1=this.getFieldValue('MODE1');
@@ -51,7 +51,7 @@ var code = model +'= ml.ModelNew(ml.model_name['+MODE1+'])'+'\n';
  return code;
 };
 
-Blockly.Python.HZgrFe= function () {
+Blockly.Python["HZgrFe"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var datasets=Blockly.Python.valueToCode(this,'datasets',Blockly.Python.ORDER_ATOMIC);
@@ -60,7 +60,7 @@ Blockly.Python.HZgrFe= function () {
  return code;
 };
 
-Blockly.Python.HZgrFd= function () {
+Blockly.Python["HZgrFd"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var datasets=Blockly.Python.valueToCode(this,'datasets',Blockly.Python.ORDER_ATOMIC);
@@ -68,14 +68,14 @@ Blockly.Python.HZgrFd= function () {
  return code;
 };
 
-Blockly.Python.yoiRER= function () {
+Blockly.Python["yoiRER"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var code=model+'.test_score';
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.kiMDfK= function () {
+Blockly.Python["kiMDfK"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var feature=Blockly.Python.valueToCode(this,'feature',Blockly.Python.ORDER_ATOMIC);
@@ -83,14 +83,14 @@ Blockly.Python.kiMDfK= function () {
  return code;
 };
 
-Blockly.Python.nHRGZf= function () {
+Blockly.Python["nHRGZf"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var code=model+'.pred';
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.FQZvmf= function () {
+Blockly.Python["FQZvmf"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
@@ -100,7 +100,7 @@ Blockly.Python.FQZvmf= function () {
 
 
 
-Blockly.Python.iRYMFW= function () {
+Blockly.Python["iRYMFW"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
@@ -108,13 +108,13 @@ Blockly.Python.iRYMFW= function () {
  return code;
 };
 
-Blockly.Python.hTTyeJ= function () {
+Blockly.Python["hTTyeJ"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
 var code= "ml.findExisModel()";
  return [code, Blockly.Python.ORDER_ATOMIC];
 };
 
-Blockly.Python.VZynUA= function () {
+Blockly.Python["VZynUA"]= function () {
   Blockly.Python.definitions_['control_machine_learn as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -122,7 +122,7 @@ Blockly.Python.VZynUA= function () {
  return code;
 };
 
-Blockly.Python.a_cqdC= function () {
+Blockly.Python["a_cqdC"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -130,7 +130,7 @@ Blockly.Python.a_cqdC= function () {
  return code;
 };
 
-Blockly.Python.e_bHjD= function () {
+Blockly.Python["e_bHjD"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -138,7 +138,7 @@ Blockly.Python.e_bHjD= function () {
  return code;
 };
 
-Blockly.Python.URZFxg= function () {
+Blockly.Python["URZFxg"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -146,7 +146,7 @@ Blockly.Python.URZFxg= function () {
  return code;
 };
 
-Blockly.Python.bUfoAo= function () {
+Blockly.Python["bUfoAo"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -154,7 +154,7 @@ Blockly.Python.bUfoAo= function () {
  return code;
 };
 
-// Blockly.Python.XQLwTZ= function () {
+// Blockly.Python["XQLwTZ"]= function () {
 //   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
 //  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
 //   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -162,7 +162,7 @@ Blockly.Python.bUfoAo= function () {
 //  return code;
 // };
 
-Blockly.Python.JjHvot= function () {
+Blockly.Python["JjHvot"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -170,7 +170,7 @@ Blockly.Python.JjHvot= function () {
  return code;
 };
 
-Blockly.Python.MDtUTa= function () {
+Blockly.Python["MDtUTa"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -178,7 +178,7 @@ Blockly.Python.MDtUTa= function () {
  return code;
 };
 
-Blockly.Python.cxWWzN= function () {
+Blockly.Python["cxWWzN"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -186,7 +186,7 @@ Blockly.Python.cxWWzN= function () {
  return code;
 };
 
-Blockly.Python.fHvBNC= function () {
+Blockly.Python["fHvBNC"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);
@@ -194,7 +194,7 @@ Blockly.Python.fHvBNC= function () {
  return code;
 };
 
-Blockly.Python.GMwzOs= function () {
+Blockly.Python["GMwzOs"]= function () {
   Blockly.Python.definitions_['control_machine_learning as ml']='from control import machine_learning as ml';
  var model=Blockly.Python.valueToCode(this,'model',Blockly.Python.ORDER_ATOMIC);
   var NUM1=Blockly.Python.valueToCode(this,'NUM1',Blockly.Python.ORDER_ATOMIC);

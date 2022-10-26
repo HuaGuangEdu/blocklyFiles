@@ -1,7 +1,7 @@
 'use strict';
 
 //初始化仿真器并设置虚拟场景
-Blockly.Blocks.emulator_init = {
+Blockly.Blocks["emulator_init"] = {
   init: function () {
     this.setColour(200);
     this.appendDummyInput()
@@ -26,7 +26,7 @@ Blockly.Blocks.emulator_init = {
 };
 
 //设置仿真摄像头
-Blockly.Blocks.emulator_camera = {
+Blockly.Blocks["emulator_camera"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('cam_name')
