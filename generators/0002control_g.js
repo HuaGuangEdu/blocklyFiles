@@ -274,7 +274,7 @@ Blockly.Python['controls_whileUntil'] = function () {
 Blockly.Python['controls_flow_statements'] = function () {
     var mode = this.getFieldValue('DIR');
 
-    var code = mode;
+    var code = mode+"\n";
     return code;
 };
 
