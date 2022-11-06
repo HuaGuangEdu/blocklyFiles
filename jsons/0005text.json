@@ -31,15 +31,15 @@
       },
       {
         "kind": "block",
-        "blockxml": " <block type='text_indexOf'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value><value name='FIND'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
+        "blockxml": " <block type='text_indexOf'><value name='VALUE'><block type='variables_get'><field name='VAR'>Text</field></block></value><value name='FIND'><shadow type='text'><field name='TEXT'>abc</field></shadow></value></block>"
       },
       {
         "kind": "block",
-        "blockxml": "<block type='text_charAt'><value name='VALUE'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
+        "blockxml": "<block type='text_charAt'><value name='VALUE'><block type='variables_get'><field name='VAR'>Text</field></block></value></block>"
       },
       {
         "kind": "block",
-        "blockxml": "<block type='text_getSubstring'><value name='STRING'><block type='variables_get'><field name='VAR'>{textVariable}</field></block></value></block>"
+        "blockxml": "<block type='text_getSubstring'><value name='STRING'><block type='variables_get'><field name='VAR'>Text</field></block></value></block>"
       },
       {
         "kind": "block",
