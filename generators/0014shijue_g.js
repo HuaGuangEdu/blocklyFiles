@@ -753,3 +753,10 @@ Blockly.Python["filter"] = function () {
   var code = a + ".filter(" + ksize + ", " + mode1 + ")\n";
   return code;
 };
+
+Blockly.Python["canny"] = function () {
+  Blockly.Python.definitions_['control_shijue0'] = 'from control import shijue0';
+  var a = Blockly.Python.valueToCode(this, 'a', Blockly.Python.ORDER_ATOMIC);
+  var code = a + ".canny()\n";
+  return code;
+};
