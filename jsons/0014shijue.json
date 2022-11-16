@@ -52,6 +52,10 @@
                         "blockxml": "<block type='ByqIWH'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     },
                     {
+                        "kind":"block",
+                        "blockxml":"<block type='count'> <value name='a'> <block type='variables_get'> <field name='VAR'>a</field> </block> </value> <value name='pixelValue'> <block type='math_number'> <field name='NUM'>0</field> </block> </value> </block>"
+                    },
+                    {
                         "kind": "block",
                         "blockxml": "<block type='Type'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     },
