@@ -1171,3 +1171,15 @@ Blockly.Blocks["canny"] = {
     this.setNextStatement(true, null);
   },
 };
+
+Blockly.Blocks["count"] = {
+  init: function () {
+    this.setColour(200);
+    this.appendValueInput('a')
+    this.appendDummyInput().appendField('中图片的');
+    this.appendValueInput("pixelValue")
+    this.appendDummyInput().appendField('像素的个数');
+    this.setInputsInline(true);
+    this.setOutput(true);
+  },
+};
