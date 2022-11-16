@@ -744,3 +744,12 @@ Blockly.Python["SubfZk"] = function () {
   var code = a + '.color_cluster_result' + '';
   return [code, Blockly.Python.ORDER_ATOMIC];
 };
+
+Blockly.Python["filter"] = function () {
+  Blockly.Python.definitions_['control_shijue0'] = 'from control import shijue0';
+  var a = Blockly.Python.valueToCode(this, 'a', Blockly.Python.ORDER_ATOMIC);
+  var ksize = Blockly.Python.valueToCode(this, 'ksize', Blockly.Python.ORDER_ATOMIC);
+  var mode1 = this.getFieldValue('DIR');
+  var code = a + ".filter(" + ksize + ", " + mode1 + ")\n";
+  return code;
+};
