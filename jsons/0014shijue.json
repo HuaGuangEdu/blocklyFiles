@@ -81,6 +81,10 @@
                     },
                     {
                         "kind": "block",
+                        "blockxml": "<block type='canny'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                    },
+                    {
+                        "kind": "block",
                         "blockxml": "<block type='qDDiBe'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     },
                     {
