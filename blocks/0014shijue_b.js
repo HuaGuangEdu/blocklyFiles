@@ -1149,12 +1149,23 @@ Blockly.Blocks["filter"] = {
     this.setColour(200);
     this.appendValueInput('a')
     this.appendDummyInput().appendField('对图片进行');
-    var mode1 = [['均值', "'average'"], ['方框滤波', "'box'"], ['高斯滤波', "'gaussian'"],
-    ['中值滤波', "'median'"], ['双边滤波', "'bilateral'"]];
+    var mode1 = [['均值', "'average'"], ['方框', "'box'"], ['高斯', "'gaussian'"],
+    ['中值', "'median'"], ['双边', "'bilateral'"]];
     this.appendDummyInput("")
       .appendField(new Blockly.FieldDropdown(mode1), 'DIR');
     this.appendDummyInput().appendField('滤波,核大小为');
     this.appendValueInput('ksize')
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["canny"] = {
+  init: function () {
+    this.setColour(200);
+    this.appendValueInput('a')
+    this.appendDummyInput().appendField('边缘检测');
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
