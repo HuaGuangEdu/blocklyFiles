@@ -760,3 +760,11 @@ Blockly.Python["canny"] = function () {
   var code = a + ".canny()\n";
   return code;
 };
+
+Blockly.Python["count"] = function () {
+  Blockly.Python.definitions_['control_shijue0'] = 'from control import shijue0';
+  var a = Blockly.Python.valueToCode(this, 'a', Blockly.Python.ORDER_ATOMIC);
+  var pixelValue = Blockly.Python.valueToCode(this, 'pixelValue', Blockly.Python.ORDER_ATOMIC);
+  var code = a + ".count(" + pixelValue + ")";
+  return [code, Blockly.Python.ORDER_ATOMIC];
+};
