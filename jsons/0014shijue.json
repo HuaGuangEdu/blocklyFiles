@@ -64,6 +64,10 @@
                         "blockxml": "<block type='dI_sLk'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     },
                     {
+                        "kind":"block",
+                        "blockxml":"<block type='filter'> <value name='a'> <block type='variables_get'> <field name='VAR'>a</field> </block> </value> <value name='ksize'> <block type='math_number'> <field name='NUM'>5</field> </block> </value> </block>"
+                    },
+                    {
                         "kind": "block",
                         "blockxml": "<block type='BGR2GRAY'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
                     },
