@@ -1165,7 +1165,10 @@ Blockly.Blocks["canny"] = {
   init: function () {
     this.setColour(200);
     this.appendValueInput('a')
-    this.appendDummyInput().appendField('边缘检测');
+    this.appendDummyInput().appendField('边缘检测,低阈值为');
+    this.appendValueInput('threshold1')
+    this.appendDummyInput().appendField(',高阈值为');
+    this.appendValueInput('threshold2')
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
