@@ -757,7 +757,9 @@ Blockly.Python["filter"] = function () {
 Blockly.Python["canny"] = function () {
   Blockly.Python.definitions_['control_shijue0'] = 'from control import shijue0';
   var a = Blockly.Python.valueToCode(this, 'a', Blockly.Python.ORDER_ATOMIC);
-  var code = a + ".canny()\n";
+  var threshold1 = Blockly.Python.valueToCode(this, 'threshold1', Blockly.Python.ORDER_ATOMIC);
+  var threshold2 = Blockly.Python.valueToCode(this, 'threshold2', Blockly.Python.ORDER_ATOMIC);
+  var code = a + ".canny(" + threshold1 + ", " + threshold2 + ")\n";
   return code;
 };
 
