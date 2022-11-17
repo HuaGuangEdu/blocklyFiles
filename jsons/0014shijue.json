@@ -85,7 +85,7 @@
                     },
                     {
                         "kind": "block",
-                        "blockxml": "<block type='canny'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value></block>"
+                        "blockxml": "<block type='canny'><value name='a'><block type='variables_get'><field name='VAR'>a</field></block></value><value name='threshold1'><block type='math_number'><field name='NUM'>30</field></block></value><value name='threshold2'><block type='math_number'><field name='NUM'>100</field></block></value></block>"
                     },
                     {
                         "kind": "block",
