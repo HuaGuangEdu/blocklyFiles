@@ -13,7 +13,7 @@ Blockly.Python["camera"] = function () {
     'cam_num',
     Blockly.Python.ORDER_ATOMIC
   );
-  var code = cam_name + '=shijue1.Img()\n' + cam_name + '.camera(' + cam_num + ')\n';
+  var code = cam_name + '=shijue1.Img() if '+cam_name+' is None else '+cam_name+'\n' + cam_name + '.camera(' + cam_num + ')\n';
   return code;
 };
 Blockly.Python["camera_close"] = function () {
@@ -82,7 +82,8 @@ Blockly.Python["camera_get_path"] = function () {
     'img_path',
     Blockly.Python.ORDER_ATOMIC
   );
-  var code = img_f + '=shijue1.Img()\n' + img_f + '.get_frame(' + img_path + ',__file__)\n';  //加入了实例化，直接一个块对应两行代码
+  
+  var code = img_f + '=shijue1.Img() if '+img_f+' is None else '+img_f+'\n' + img_f + '.get_frame(' + img_path + ',__file__)\n';  //加入了实例化，直接一个块对应两行代码
   return code;
 };
 

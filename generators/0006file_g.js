@@ -170,3 +170,64 @@ Blockly.Python["get_directory"] = function () {
     var code = f + '.get_directory(' + row + ',' + column + ')\n';
     return [code, Blockly.Python.ORDER_ATOMIC];
 };
+
+Blockly.Python["ozdlOz"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=f+'=file_operation.Folder('+STR1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["OCsdBO"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var code=f+'.get_root_path()'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+Blockly.Python["kraEwz"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var code=f+'.create_folder('+STR1+')'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+
+
+
+
+
+
+
+
+Blockly.Python["sHLAPQ"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var MODE1=this.getFieldValue('MODE1');
+var code=f+'.get_folder_info('+STR1+', '+MODE1+')'+'';
+ return [code, Blockly.Python.ORDER_ATOMIC];
+};
+
+
+
+Blockly.Python["rDsNka"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var STR2=Blockly.Python.valueToCode(this,'STR2',Blockly.Python.ORDER_ATOMIC);
+  var MODE1=this.getFieldValue('MODE1');
+var code=f+'.move_file('+STR1+', '+STR2+', '+MODE1+')'+'\n';
+ return code;
+};
+
+Blockly.Python["_nvRBV"]= function () {
+  Blockly.Python.definitions_['control_file_operation']='from control import file_operation';
+ var f=Blockly.Python.valueToCode(this,'f',Blockly.Python.ORDER_ATOMIC);
+  var STR1=Blockly.Python.valueToCode(this,'STR1',Blockly.Python.ORDER_ATOMIC);
+  var STR2=Blockly.Python.valueToCode(this,'STR2',Blockly.Python.ORDER_ATOMIC);
+  var code=f+'.rename('+STR1+', '+STR2+')'+'\n';
+ return code;
+};

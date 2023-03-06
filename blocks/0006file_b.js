@@ -358,3 +358,99 @@ Blockly.Blocks["get_directory"] = {
 
 
 
+
+
+Blockly.Blocks["ozdlOz"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendDummyInput().appendField('赋值');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('为文件夹');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["OCsdBO"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendDummyInput().appendField('获取');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('文件夹的路径');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};
+
+
+Blockly.Blocks["kraEwz"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('创建一个新目录');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.appendDummyInput().appendField('，并返回新目录的路径');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};
+
+
+
+
+
+
+
+
+
+
+Blockly.Blocks["sHLAPQ"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('获取');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.appendDummyInput().appendField('（不填默认对象根目录）下的');
+  var MODE1=[['文件名列表', '2'], ['文件夹列表', '1'], ['根目录路径', '0'], ['文件名绝对路径列表', '3']];
+  this.appendDummyInput('').appendField(new Blockly.FieldDropdown(MODE1),'MODE1');
+  this.setInputsInline(true);
+  this.setOutput(true);
+  },  
+};
+
+
+
+
+Blockly.Blocks["rDsNka"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('将文件');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.appendDummyInput().appendField('移动（');
+  var MODE1=[['保留原文件', "'copy'"], ['不保留原文件', "'move'"]];
+  this.appendDummyInput('').appendField(new Blockly.FieldDropdown(MODE1),'MODE1');
+  this.appendDummyInput().appendField('）到');
+  this.appendValueInput('STR2',String).setCheck('String')
+  this.appendDummyInput().appendField('文件夹下');
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
+
+Blockly.Blocks["_nvRBV"]={
+  init: function () {
+  this.setColour('#6cabde');
+  this.appendValueInput('f').setCheck('var');
+  this.appendDummyInput().appendField('重命名文件（夹）');
+  this.appendValueInput('STR1',String).setCheck('String')
+  this.appendDummyInput().appendField('为');
+  this.appendValueInput('STR2',String).setCheck('String')
+  this.setInputsInline(true);
+  this.setPreviousStatement(true, null);
+  this.setNextStatement(true, null);
+  },
+};
